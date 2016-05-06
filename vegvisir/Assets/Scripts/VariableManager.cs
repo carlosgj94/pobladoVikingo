@@ -52,7 +52,7 @@ public class VariableManager : MonoBehaviour {
 			fiesta++;
 		}
 
-		int variacionPoblacion = Mathf.Round((poblacion * Random(-5,5))/100);
+		int variacionPoblacion = (int)Mathf.Round((poblacion * Random.Range(-5,5))/100);
 		poblacion += variacionPoblacion;
 
 	}
