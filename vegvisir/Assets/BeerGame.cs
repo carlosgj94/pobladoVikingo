@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class BeerGame : MonoBehaviour {
 
@@ -20,6 +21,12 @@ public class BeerGame : MonoBehaviour {
 
     private bool morido=false;
     private int puntos;
+
+    [SerializeField]
+    private GameObject resultado;
+
+    [SerializeField]
+    private Text contenidoResultado;
    
     // Use this for initialization
     void Start () {
@@ -29,7 +36,7 @@ public class BeerGame : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Time.time < 10.0f || morido)
+        if (Time.time < 10.0f && !morido)
         {
             if (Input.touchCount > 0 || Input.GetMouseButtonDown(0))
             {
@@ -74,8 +81,18 @@ public class BeerGame : MonoBehaviour {
         }
         else
         {
-            PlayerPrefs.SetInt("PuntosBeer", puntos);
-            PlayerPrefs.SetInt("Fiesta", PlayerPrefs.GetInt("Fiesta") + puntos / 2);
+            resultado.gameObject.SetActive(true);
+            contenidoResultado.text = "Has hecho "+puntos+" puntos.\nEsto son "+puntos/2+ " que se te restan a la fiesta";
+            
         }
 	}
+    public void beerFinalClick()
+    {
+        PlayerPrefs.SetInt("PuntosBeer", puntos);
+        if((PlayerPrefs.GetInt("Fiesta") - puntos/2) > 0)
+            PlayerPrefs.SetInt("Fiesta", PlayerPrefs.GetInt("Fiesta") - (puntos / 2));
+        else
+            PlayerPrefs.SetInt("Fiesta", 0);
+        SceneManager.LoadScene("Scene1");
+    }
 }
