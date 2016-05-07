@@ -12,6 +12,7 @@ TagManager:
   - Lanza
   - Pared
   - Casa
+  - LanzaManecilla
   layers:
   - Default
   - TransparentFX

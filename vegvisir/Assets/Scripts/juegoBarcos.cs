@@ -17,7 +17,7 @@ public class juegoBarcos : MonoBehaviour {
 	public GameObject barcoEnemigo1, barcoEnemigo2;
 
 	private int vidas = 3;
-	public int puntuacion = 0;
+	public int puntos = 0;
 
 	// Use this for initialization
 	void Start () {
@@ -64,17 +64,26 @@ public class juegoBarcos : MonoBehaviour {
 		{
 			acabado = true;
 			cartel.gameObject.SetActive(true);
-			puntuacionFinal.text = "Has perdido.\n Tu puntuacion ha sido de: " /*+ puntos + "\n El hambre ha disminuido en " + puntos/2*/;
+			puntuacionFinal.text = "Has perdido.\n Tu puntuacion ha sido de: " + puntos + "\n El ansia de sangre ha disminuido " + puntos/2;
 
-			//PlayerPrefs.SetInt("PuntosBarco", puntos);
-			//PlayerPrefs.SetInt ("Hambre", PlayerPrefs.GetInt ("Hambre") - puntos / 2);
+			PlayerPrefs.SetInt("PuntosBarco", puntos);
+			PlayerPrefs.SetInt ("Sangre", PlayerPrefs.GetInt ("Sangre") - puntos / 2);
+		}
+
+		if(puntos == 50){
+			acabado = true;
+			cartel.gameObject.SetActive(true);
+			puntuacionFinal.text = "Has alzanzado la puntuación máxima.\n Tu puntuacion ha sido de: " + puntos + "\n El ansia de sangre ha disminuido " + puntos/2;
+
+			PlayerPrefs.SetInt("PuntosBarco", puntos);
+			PlayerPrefs.SetInt ("Sangre", PlayerPrefs.GetInt ("Sangre") - puntos / 2);
 		}
 	}
 
 	public void aumentarPuntuacion(){
-		puntuacion += 1;
-		textoPuntuacion.text = puntuacion + " puntos";
-
+		puntos += 1;
+		textoPuntuacion.text = puntos + " puntos";
+		checkAcabado ();
 	} 
 
 }
