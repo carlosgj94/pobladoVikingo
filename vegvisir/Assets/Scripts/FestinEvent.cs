@@ -26,92 +26,61 @@ public class FestinEvent : MonoBehaviour {
 	[SerializeField]
 	private ResultadoEvento resultado;
 
-	private List<string> enemigos = new List<string>{"John Snow", "El Cesar", "los Aliens", "una manada de topos"};
+	private List<string> comida = new List<string>{"ganso", "salmón ahumado", "queso y miel", "hipters"};
 	// Use this for initialization
 	void Start () {
-		int random = Random.Range(0, enemigos.Count);
-		titulo.text = "Guerra con " +enemigos[random];
-		contenido.text = "La guerra es algo mazo de duro lider. Que desea hacer premoh?";
+		int random = Random.Range(0, comida.Count);
+		titulo.text = "Festín de " +comida[random];
+		contenido.text = "Para los vikingos los festines son algo casi tan serio como las batallas. ¿Cómo nos lo montamos?";
 
-		botonTexto1.text = "Abandorar";
-		botonTexto2.text = "Pacto";
-		botonTexto3.text = "Guerra joder!";
+		botonTexto1.text = "Festín opulento";
+		botonTexto2.text = "Festín de tranquis";
+		botonTexto3.text = "Cada uno a su casa";
 	}
 	void OnEnable()
 	{
-		int random = Random.Range(0, enemigos.Count);
-		titulo.text = "Guerra con " + enemigos[random];
-		contenido.text = "La guerra es algo mazo de duro lider. Que desea hacer premoh?";
+		int random = Random.Range(0, comida.Count);
+		titulo.text = "Festín de " +comida[random];
+		contenido.text = "Para los vikingos los festines son algo casi tan serio como las batallas. ¿Cómo nos lo montamos?";
 
-		botonTexto1.text = "Abandonar";
-		botonTexto2.text = "Pacto";
-		botonTexto3.text = "Guerra joder!";
+		botonTexto1.text = "Festín opulento";
+		botonTexto2.text = "Festín de tranquis";
+		botonTexto3.text = "Cada uno a su casa";
 	}
-	public void abandonarClick()
+
+	public void opulentoClick()
 	{
-		int poblacion = Random.Range(1, 3);
-		int hambre = Random.Range(1, 3);
+		int hambre = Random.Range(3, 6);
+		int fiesta = Random.Range(1, 3);
 		int sangre = Random.Range(2, 4);
+		variables.disminuirHambre(hambre);
+		variables.aumentarFiesta(fiesta);
+		variables.aumentarSangre(sangre);
+		resultado.gameObject.SetActive(true);
+		resultado.refresh(0, 0-hambre, sangre, fiesta);
+		this.gameObject.SetActive(false);
+
+	}
+	public void tranquisClick()
+	{
+		int hambre = Random.Range(3, 6);
 		int fiesta = Random.Range(2, 4);
+		int sangre = Random.Range(1, 3);
+		variables.disminuirHambre(hambre);
+		variables.aumentarFiesta(fiesta);
+		variables.aumentarSangre(sangre);
+		resultado.gameObject.SetActive(true);
+		resultado.refresh(0, 0-hambre, sangre, fiesta);
+		this.gameObject.SetActive(false);
+	}
+	public void casaClick()
+	{
+		int poblacion = Random.Range(3, 6);
+		int sangre = Random.Range(1, 3);
 		variables.disminuirPoblacion(poblacion);
-		variables.aumentarHambre(hambre);
 		variables.aumentarSangre(sangre);
-		variables.aumentarFiesta(fiesta);
 		resultado.gameObject.SetActive(true);
-		resultado.refresh(0-poblacion, hambre, sangre, fiesta);
-		this.gameObject.SetActive(false);
-
-	}
-	public void pactoClick()
-	{
-		int hambre = Random.Range(2, 4);
-		int sangre = Random.Range(3, 5);
-		int fiesta = Random.Range(2, 4);
-		variables.aumentarHambre(hambre);
-		variables.aumentarSangre(sangre);
-		variables.aumentarFiesta(fiesta);
-		resultado.gameObject.SetActive(true);
-		resultado.refresh(0, hambre, sangre, fiesta);
-		this.gameObject.SetActive(false);
-	}
-	public void guerraClick()
-	{
-		int poblacion;
-		int hambre;
-		int sangre;
-		int fiesta;
-		if (Random.Range(0, 1) == 0)
-		{
-			//Ganas
-			poblacion = Random.Range(7, 13);
-			hambre = Random.Range(1, 3);
-			sangre = Random.Range(2, 4);
-			fiesta = Random.Range(2, 4);
-
-			variables.disminuirPoblacion(Random.Range(7, 13));
-			variables.disminuirHambre(Random.Range(1, 3));
-			variables.disminuirSangre(Random.Range(2, 4));
-			variables.disminuirFiesta(Random.Range(2, 4));
-
-			resultado.gameObject.SetActive(true);
-			resultado.refresh(0 - poblacion, 0-hambre, 0-sangre, 0-fiesta);
-		}
-		else
-		{
-			//Pierdes
-			poblacion = Random.Range(10, 18);
-			hambre = Random.Range(1, 3);
-			sangre = Random.Range(2, 4);
-			fiesta = Random.Range(2, 4);
-			variables.disminuirPoblacion(Random.Range(10, 18));
-			variables.aumentarHambre(Random.Range(1, 3));
-			variables.disminuirSangre(Random.Range(2, 4));
-			variables.aumentarFiesta(Random.Range(2, 4));
-
-			resultado.gameObject.SetActive(true);
-			resultado.refresh(0 - poblacion, hambre, 0-sangre, fiesta);
-		}
-
+		resultado.refresh(0-poblacion, 0, sangre, 0);
 		this.gameObject.SetActive(false);
 	}
 }

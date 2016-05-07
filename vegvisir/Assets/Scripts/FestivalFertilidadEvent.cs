@@ -30,8 +30,8 @@ public class FestivalFertilidadEvent : MonoBehaviour {
 		titulo.text = "Festival de la fertilidad";
 		contenido.text = "Ha llegado la hora de celebrar el festival de la fertilidad. ¿Qué vamos a hacer?";
 
-		botonTexto1.text = "¡Qué lluevan niños";
-		botonTexto2.text = "Tampoco nos pasemos";
+		botonTexto1.text = "¡Lluvia de niños!";
+		botonTexto2.text = "Sin pasarse";
 		botonTexto3.text = "A dormir";
 	}
 
@@ -40,8 +40,8 @@ public class FestivalFertilidadEvent : MonoBehaviour {
 		titulo.text = "Festival de la fertilidad";
 		contenido.text = "Ha llegado la hora de celebrar el festival de la fertilidad. ¿Qué vamos a hacer?";
 
-		botonTexto1.text = "¡Qué lluevan niños";
-		botonTexto2.text = "Tampoco nos pasemos";
+		botonTexto1.text = "¡Lluvia de niños!";
+		botonTexto2.text = "Sin pasarse";
 		botonTexto3.text = "A dormir";
 	}
 	public void lluviaClick()

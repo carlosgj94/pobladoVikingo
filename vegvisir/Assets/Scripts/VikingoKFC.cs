@@ -108,8 +108,10 @@ public class VikingoKFC : MonoBehaviour {
         if(vidas == 0)
         {
             morido.gameObject.SetActive(true);
-            puntuacionFinal.text = "Tu puntuacion ha sido de: " + puntos;
+			puntuacionFinal.text = "Tu puntuacion ha sido de: " + puntos + "\n El hambre ha disminuido en " + puntos/2;
+
             PlayerPrefs.SetInt("PuntosKfc", puntos);
+			PlayerPrefs.SetInt ("HambreFinal", PlayerPrefs.GetInt ("HambreFinal") + puntos / 2);
         }
     }
 }
