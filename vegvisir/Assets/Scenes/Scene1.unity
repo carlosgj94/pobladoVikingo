@@ -1097,6 +1097,19 @@ Prefab:
       value: 
       objectReference: {fileID: 12800000, guid: d358cec07351dcd43a727e53ba33326f,
         type: 3}
+    - target: {fileID: 11414050, guid: 5a3fb755db435b64584c7f5da1987ab6, type: 2}
+      propertyPath: m_Text
+      value: "\xA1A comer pollo!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 11406640, guid: 5a3fb755db435b64584c7f5da1987ab6, type: 2}
+      propertyPath: m_Text
+      value: 'Pollos y flechas caeran desde el cielo, agarra los primeros y esquiva
+        las segundas. Utiliza las teclas <- y -> para levantar los brazos. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 11498308, guid: 5a3fb755db435b64584c7f5da1987ab6, type: 2}
+      propertyPath: m_Text
+      value: 'Empezar '
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5a3fb755db435b64584c7f5da1987ab6, type: 2}
   m_IsPrefabParent: 0
@@ -1141,6 +1154,7 @@ MonoBehaviour:
   - {fileID: 1964889918}
   listaJuegos:
   - {fileID: 1453585967}
+  - {fileID: 642462624}
   morido: {fileID: 1025469911}
   estadisticas: {fileID: 1613053050}
 --- !u!4 &528574506
@@ -1160,6 +1174,140 @@ RectTransform:
   m_PrefabParentObject: {fileID: 22458190, guid: 24620a39731b9bd449a6d13a0fcded74,
     type: 2}
   m_PrefabInternal: {fileID: 1572737175}
+--- !u!1001 &642462622
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 811931680}
+    m_Modifications:
+    - target: {fileID: 22435142, guid: 48631b6701af6a141ab0a2f2579013d6, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22435142, guid: 48631b6701af6a141ab0a2f2579013d6, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22435142, guid: 48631b6701af6a141ab0a2f2579013d6, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22435142, guid: 48631b6701af6a141ab0a2f2579013d6, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22435142, guid: 48631b6701af6a141ab0a2f2579013d6, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22435142, guid: 48631b6701af6a141ab0a2f2579013d6, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22435142, guid: 48631b6701af6a141ab0a2f2579013d6, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22435142, guid: 48631b6701af6a141ab0a2f2579013d6, type: 2}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 22435142, guid: 48631b6701af6a141ab0a2f2579013d6, type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22435142, guid: 48631b6701af6a141ab0a2f2579013d6, type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22435142, guid: 48631b6701af6a141ab0a2f2579013d6, type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22435142, guid: 48631b6701af6a141ab0a2f2579013d6, type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22435142, guid: 48631b6701af6a141ab0a2f2579013d6, type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0.077536106
+      objectReference: {fileID: 0}
+    - target: {fileID: 22435142, guid: 48631b6701af6a141ab0a2f2579013d6, type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0.164
+      objectReference: {fileID: 0}
+    - target: {fileID: 22435142, guid: 48631b6701af6a141ab0a2f2579013d6, type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0.64743316
+      objectReference: {fileID: 0}
+    - target: {fileID: 22435142, guid: 48631b6701af6a141ab0a2f2579013d6, type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0.86346453
+      objectReference: {fileID: 0}
+    - target: {fileID: 22435142, guid: 48631b6701af6a141ab0a2f2579013d6, type: 2}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 22435142, guid: 48631b6701af6a141ab0a2f2579013d6, type: 2}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11488244, guid: 48631b6701af6a141ab0a2f2579013d6, type: 2}
+      propertyPath: variables
+      value: 
+      objectReference: {fileID: 756036539}
+    - target: {fileID: 11488244, guid: 48631b6701af6a141ab0a2f2579013d6, type: 2}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 528574505}
+    - target: {fileID: 11428346, guid: 48631b6701af6a141ab0a2f2579013d6, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 642462625}
+    - target: {fileID: 11428346, guid: 48631b6701af6a141ab0a2f2579013d6, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: buttonClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 11493564, guid: 48631b6701af6a141ab0a2f2579013d6, type: 2}
+      propertyPath: m_Text
+      value: "\xA1A beber hidromiel!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 11406754, guid: 48631b6701af6a141ab0a2f2579013d6, type: 2}
+      propertyPath: m_Text
+      value: "Bebe tanto hidromiel como puedas pulsando en la pantalla con el rat\xF3n.
+        Atento a la barra, si llega al m\xE1ximo o al m\xEDnimo perderas."
+      objectReference: {fileID: 0}
+    - target: {fileID: 11482548, guid: 48631b6701af6a141ab0a2f2579013d6, type: 2}
+      propertyPath: m_Text
+      value: "\xA1Traga! \xA1Traga!"
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 11488244, guid: 48631b6701af6a141ab0a2f2579013d6, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: 48631b6701af6a141ab0a2f2579013d6, type: 2}
+  m_IsPrefabParent: 0
+--- !u!224 &642462623 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 22435142, guid: 48631b6701af6a141ab0a2f2579013d6,
+    type: 2}
+  m_PrefabInternal: {fileID: 642462622}
+--- !u!1 &642462624 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 170708, guid: 48631b6701af6a141ab0a2f2579013d6, type: 2}
+  m_PrefabInternal: {fileID: 642462622}
+--- !u!114 &642462625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 642462624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06dec6d3c66d9474998514e732a7c21d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  variables: {fileID: 756036539}
+  gameManager: {fileID: 528574505}
 --- !u!1 &756036538
 GameObject:
   m_ObjectHideFlags: 0
@@ -1314,6 +1462,7 @@ RectTransform:
   - {fileID: 1964889917}
   - {fileID: 2088148570}
   - {fileID: 1453585971}
+  - {fileID: 642462623}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_AnchorMin: {x: 0, y: 0}

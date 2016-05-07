@@ -41,7 +41,7 @@ public class CelebracionEvent : MonoBehaviour {
 	{
 		int random = Random.Range(0, fiesta.Count);
 		titulo.text = "Fiesta de " +fiesta[random];
-		contenido.text = "";
+		contenido.text = "Las fechas indican fiesta y las ganas nunca faltan en el pueblo. ¿La liamos?";
 
 		botonTexto1.text = "Como si fuera Ragnarök";
 		botonTexto2.text = "Una hidromiel y a casa";
