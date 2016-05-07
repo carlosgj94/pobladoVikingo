@@ -658,7 +658,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 181142, guid: 59992d22285119e4eb999b0059b1ba80, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22443128, guid: 59992d22285119e4eb999b0059b1ba80, type: 2}
       propertyPath: m_AnchorMin.x
@@ -813,6 +813,22 @@ Prefab:
       propertyPath: resultado
       value: 
       objectReference: {fileID: 1939125869}
+    - target: {fileID: 11423754, guid: 59992d22285119e4eb999b0059b1ba80, type: 2}
+      propertyPath: battleMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: d875e76c976cf5e4284f9f8e2b02023f, type: 3}
+    - target: {fileID: 11423754, guid: 59992d22285119e4eb999b0059b1ba80, type: 2}
+      propertyPath: pactoMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: 7e7aa8a02e543a84a82e96fe9b160c85, type: 3}
+    - target: {fileID: 11423754, guid: 59992d22285119e4eb999b0059b1ba80, type: 2}
+      propertyPath: retiradaMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: a7d395f5c3703d74ea3e676f3d6fdfe0, type: 3}
+    - target: {fileID: 11423754, guid: 59992d22285119e4eb999b0059b1ba80, type: 2}
+      propertyPath: audioS
+      value: 
+      objectReference: {fileID: 479796486}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 59992d22285119e4eb999b0059b1ba80, type: 2}
   m_IsPrefabParent: 0
@@ -1005,6 +1021,108 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 468215464}
+--- !u!1 &479796485
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 479796487}
+  - 82: {fileID: 479796486}
+  m_Layer: 0
+  m_Name: Audio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &479796486
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 479796485}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+--- !u!4 &479796487
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 479796485}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1780576047}
+  m_RootOrder: 0
 --- !u!1001 &481875818
 Prefab:
   m_ObjectHideFlags: 0
@@ -2923,7 +3041,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 479796487}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!82 &1780576048

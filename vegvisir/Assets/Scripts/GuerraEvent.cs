@@ -4,6 +4,15 @@ using UnityEngine.UI;
 using System.Collections.Generic;
 
 public class GuerraEvent : MonoBehaviour {
+    //Audios
+    public AudioSource audioS;
+    [SerializeField]
+    private AudioClip battleMusic;
+    [SerializeField]
+    private AudioClip pactoMusic;
+    [SerializeField]
+    private AudioClip retiradaMusic;
+
     //Textos
     [SerializeField]
     private Text titulo;
@@ -35,7 +44,8 @@ public class GuerraEvent : MonoBehaviour {
         botonTexto1.text = "Abandorar";
         botonTexto2.text = "Pacto";
         botonTexto3.text = "Guerra joder!";
-	}
+
+    }
     void OnEnable()
     {
         int random = Random.Range(0, enemigos.Count);
@@ -48,6 +58,8 @@ public class GuerraEvent : MonoBehaviour {
     }
     public void abandonarClick()
     {
+        audioS.clip = retiradaMusic;
+        audioS.Play();
         int poblacion = Random.Range(1, 3);
         int hambre = Random.Range(1, 3);
         int sangre = Random.Range(2, 4);
@@ -63,6 +75,8 @@ public class GuerraEvent : MonoBehaviour {
     }
 	public void pactoClick()
     {
+        audioS.clip = pactoMusic;
+        audioS.Play();
         int hambre = Random.Range(2, 4);
         int sangre = Random.Range(3, 5);
         int fiesta = Random.Range(2, 4);
@@ -75,6 +89,8 @@ public class GuerraEvent : MonoBehaviour {
     }
     public void guerraClick()
     {
+        audioS.clip = battleMusic;
+        audioS.Play();
         int poblacion;
         int hambre;
         int sangre;

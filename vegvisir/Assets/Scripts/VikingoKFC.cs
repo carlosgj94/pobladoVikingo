@@ -10,6 +10,13 @@ public class VikingoKFC : MonoBehaviour {
     public int puntos = 0;
 
     [SerializeField]
+    private AudioSource audioS;
+    [SerializeField]
+    private AudioClip tragarAudio;
+    [SerializeField]
+    private AudioClip flechasAudio;
+
+    [SerializeField]
     private Text puntuacionFinal;
 
     public float direction;
