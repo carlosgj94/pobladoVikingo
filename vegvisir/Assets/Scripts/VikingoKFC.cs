@@ -6,8 +6,11 @@ public class VikingoKFC : MonoBehaviour {
     [SerializeField]
     private Text puntosTexto;
     [SerializeField]
-    private Text morido;
-    private int puntos = 0;
+    private GameObject morido;
+    public int puntos = 0;
+
+    [SerializeField]
+    private Text puntuacionFinal;
 
     public float direction;
 
@@ -105,6 +108,8 @@ public class VikingoKFC : MonoBehaviour {
         if(vidas == 0)
         {
             morido.gameObject.SetActive(true);
+            puntuacionFinal.text = "Tu puntuacion ha sido de: " + puntos;
+            PlayerPrefs.SetInt("PuntosKfc", puntos);
         }
     }
 }
