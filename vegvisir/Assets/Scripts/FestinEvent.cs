@@ -50,7 +50,7 @@ public class FestinEvent : MonoBehaviour {
 
 	public void opulentoClick()
 	{
-		int hambre = Random.Range(3, 6);
+		int hambre = Random.Range(4, 8);
 		int fiesta = Random.Range(1, 3);
 		int sangre = Random.Range(2, 4);
 		variables.disminuirHambre(hambre);

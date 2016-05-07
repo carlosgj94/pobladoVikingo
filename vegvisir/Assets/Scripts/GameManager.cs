@@ -9,6 +9,10 @@ public class GameManager : MonoBehaviour {
 
     [SerializeField]
     private List<GameObject> listaEventos;
+	[SerializeField]
+	private List<GameObject> listaNoticias;
+	[SerializeField]
+	private List<GameObject> listaJuegos;
 
     [SerializeField]
     private Text morido;
@@ -28,8 +32,18 @@ public class GameManager : MonoBehaviour {
     }
     void lanzarEvento()
     {
-        int random = Random.Range(0, listaEventos.Count);
-        listaEventos[random].SetActive(true);
+		int bigRandom = Random.Range (0,2);
+
+		if(bigRandom == 0){
+			int random = Random.Range(0, listaEventos.Count);
+	        listaEventos[random].SetActive(true);
+		}else if(bigRandom == 1){
+			int random = Random.Range(0, listaNoticias.Count);
+			listaNoticias[random].SetActive(true);
+		}else if(bigRandom == 2){
+			int random = Random.Range(0, listaJuegos.Count);
+			listaJuegos[random].SetActive(true);
+		}
 
     }
     void checkVidas()
@@ -53,10 +67,10 @@ public class GameManager : MonoBehaviour {
             PlayerPrefs.SetInt("FiestaFinal", variables.fiesta);
 
             //Reseteamos los datos
-            PlayerPrefs.SetInt("PoblacionFinal", 0);
-            PlayerPrefs.SetInt("HambreFinal", 0);
-            PlayerPrefs.SetInt("SangreFinal", 0);
-            PlayerPrefs.SetInt("FiestaFinal", 0);
+            PlayerPrefs.SetInt("Poblacion", 0);
+            PlayerPrefs.SetInt("Hambre", 0);
+            PlayerPrefs.SetInt("Sangre", 0);
+            PlayerPrefs.SetInt("Fiesta", 0);
 
             //Aqui ya cambiamos a la escena de intro
             morido.gameObject.SetActive(true);
