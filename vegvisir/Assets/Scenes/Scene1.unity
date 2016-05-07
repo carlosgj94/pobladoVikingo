@@ -806,7 +806,7 @@ GameObject:
   m_Component:
   - 224: {fileID: 389150466}
   m_Layer: 5
-  m_Name: --Eventos--
+  m_Name: '---Eventos---'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1248,7 +1248,6 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -2556,7 +2555,7 @@ GameObject:
   m_Component:
   - 224: {fileID: 1799732224}
   m_Layer: 5
-  m_Name: --Noticias--
+  m_Name: '---Noticias---'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2816,7 +2815,7 @@ GameObject:
   m_Component:
   - 224: {fileID: 2088148570}
   m_Layer: 5
-  m_Name: --Juegos--
+  m_Name: '---Juegos---'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
