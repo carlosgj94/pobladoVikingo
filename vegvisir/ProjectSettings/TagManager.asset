@@ -7,7 +7,12 @@ TagManager:
   - Pollo
   - Flecha
   - Vikingo
+  - BarcoVikingo
+  - BarcoEnemigo
+  - Lanza
+  - Pared
   - Casa
+  - LanzaManecilla
   layers:
   - Default
   - TransparentFX

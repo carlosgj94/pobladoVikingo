@@ -258,7 +258,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1541998265}
-        m_MethodName: finalKfcClick
+        m_MethodName: finalBarcosClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1011,7 +1011,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1541998262}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87cc56c50d822414abac07186236f9f2, type: 3}
+  m_Script: {fileID: 11500000, guid: 822cb75f5a6b58c499fa13de83c53b58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1641754215
