@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class FinalKfc : MonoBehaviour {
-	void finalKfcClick()
+	public void finalKfcClick()
     {
-        Application.LoadLevel("Scene1");
+        SceneManager.LoadScene("Scene1");
     }
 }

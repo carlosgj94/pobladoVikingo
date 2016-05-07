@@ -9,7 +9,17 @@ public class VariableManager : MonoBehaviour {
 	public int fiesta = 0;
 	public int poblacion = 1000;
 	public int dias = 0;
+    void start()
+    {
+        if(PlayerPrefs.GetInt("Dias")!=0){
+            sangre = PlayerPrefs.GetInt("Sangre");
+            hambre = PlayerPrefs.GetInt("Hambre");
+            fiesta = PlayerPrefs.GetInt("Fiesta");
+            poblacion = PlayerPrefs.GetInt("Poblacion");
 
+            estadisticas.refresh();
+        }
+    }
 	public void aumentarSangre(int cantidad){
 		sangre += cantidad;
         estadisticas.refresh();
