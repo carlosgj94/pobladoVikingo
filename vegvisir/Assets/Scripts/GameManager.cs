@@ -4,21 +4,22 @@ using UnityEngine.UI;
 using System.Collections.Generic;
 
 public class GameManager : MonoBehaviour {
+	
     [SerializeField]
     private VariableManager variables;
-
     [SerializeField]
     private List<GameObject> listaEventos;
 	[SerializeField]
 	private List<GameObject> listaNoticias;
 	[SerializeField]
 	private List<GameObject> listaJuegos;
-
-    [SerializeField]
-    private Text morido;
     // Use this for initialization
     [SerializeField]
     private EstadisticasManager estadisticas;
+	[SerializeField]
+	private GameObject morido;
+	public Text contenido;
+
     void Start ()
     {
         this.siguientePaso();
@@ -60,6 +61,9 @@ public class GameManager : MonoBehaviour {
 
         if (muerto)
         {
+			morido.gameObject.SetActive(true);
+			contenido.text = "No has conseguido gobernar bien a tu pueblo. \nHas perdido.";
+
             //Guardamos los datos
             PlayerPrefs.SetInt("PoblacionFinal", variables.poblacion);
             PlayerPrefs.SetInt("HambreFinal", variables.hambre);
