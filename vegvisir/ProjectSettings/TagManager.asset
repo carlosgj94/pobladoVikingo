@@ -11,6 +11,7 @@ TagManager:
   - BarcoEnemigo
   - Lanza
   - Pared
+  - Casa
   layers:
   - Default
   - TransparentFX

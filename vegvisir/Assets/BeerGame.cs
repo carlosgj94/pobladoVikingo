@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class BeerGame : MonoBehaviour {
 
@@ -20,31 +21,41 @@ public class BeerGame : MonoBehaviour {
 
     private bool morido=false;
     private int puntos;
+
+    [SerializeField]
+    private GameObject resultado;
+
+    [SerializeField]
+    private Text contenidoResultado;
+
+   
    
     // Use this for initialization
     void Start () {
         momment = -1.6f;
         mommentViking = 0.0f;
+        morido = false;
+        Debug.Log(Time.timeSinceLevelLoad);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        if (Time.time < 10.0f || morido)
+        if (Time.timeSinceLevelLoad < 10.0f && !morido)
         {
             if (Input.touchCount > 0 || Input.GetMouseButtonDown(0))
             {
                 clicks++;
-                mommentViking = Time.time;
+                mommentViking = Time.timeSinceLevelLoad;
                 this.GetComponent<SpriteRenderer>().sprite = Resources.Load("Beer/" + "borracho02", typeof(Sprite)) as Sprite;
             }
             else {
-                if (Time.time - mommentViking > 0.1f)
+                if (Time.timeSinceLevelLoad - mommentViking > 0.1f)
                     this.GetComponent<SpriteRenderer>().sprite = Resources.Load("Beer/" + "borracho01", typeof(Sprite)) as Sprite;
             }
 
-            if (Time.time - momment > 1.0f)
+            if (Time.timeSinceLevelLoad - momment > 1.0f)
             {
-                momment = Time.time;
+                momment = Time.timeSinceLevelLoad;
 
                 puntos += clicks;
 
@@ -67,15 +78,25 @@ public class BeerGame : MonoBehaviour {
                     barraImagen.sprite = Resources.Load("Beer/" + "barracerveza0", typeof(Sprite)) as Sprite;
 
                 clicks = 0;
-                counterText.text = "Tiempo: " + (10 - (int) Time.time-1);
+                counterText.text = "Tiempo: " + (10 - (int) Time.timeSinceLevelLoad);
                 puntosTexto.text = "Puntos: " + puntos;
 
             }
         }
         else
         {
-            PlayerPrefs.SetInt("PuntosBeer", puntos);
-            PlayerPrefs.SetInt("Fiesta", PlayerPrefs.GetInt("Fiesta") + puntos / 2);
+            resultado.gameObject.SetActive(true);
+            contenidoResultado.text = "Has hecho "+puntos+" puntos.\nEsto son "+puntos/2+ " que se te restan a la fiesta";
+            
         }
 	}
+    public void beerFinalClick()
+    {
+        PlayerPrefs.SetInt("PuntosBeer", puntos);
+        if((PlayerPrefs.GetInt("Fiesta") - puntos/2) > 0)
+            PlayerPrefs.SetInt("Fiesta", PlayerPrefs.GetInt("Fiesta") - (puntos / 2));
+        else
+            PlayerPrefs.SetInt("Fiesta", 0);
+        SceneManager.LoadScene("Scene1");
+    }
 }

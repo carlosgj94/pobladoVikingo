@@ -109,7 +109,7 @@ public class VikingoKFC : MonoBehaviour {
 			PlayerPrefs.SetInt ("Hambre", PlayerPrefs.GetInt ("Hambre") - puntos / 2);
         }
 
-		if(puntos == 5)
+		if(puntos == 50)
 		{
 			acabado = true;
 			morido.gameObject.SetActive(true);
