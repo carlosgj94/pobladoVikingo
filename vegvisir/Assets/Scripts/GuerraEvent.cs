@@ -42,7 +42,7 @@ public class GuerraEvent : MonoBehaviour {
         titulo.text = "Guerra con " + enemigos[random];
         contenido.text = "La guerra es algo mazo de duro lider. Que desea hacer premoh?";
 
-        botonTexto1.text = "Abandorar";
+        botonTexto1.text = "Abandonar";
         botonTexto2.text = "Pacto";
         botonTexto3.text = "Guerra joder!";
     }
