@@ -13,49 +13,75 @@ public class VariableManager : MonoBehaviour {
 	public void aumentarSangre(int cantidad){
 		sangre += cantidad;
         estadisticas.refresh();
-	}
+        PlayerPrefs.SetInt("Sangre", sangre);
+    }
 	public void disminuirSangre(int cantidad){
-        if (sangre <= 0)
+        if (sangre >= cantidad)
         {
             sangre -= cantidad;
-            estadisticas.refresh();
         }
+        else
+        {
+            sangre = 0;
+        }
+        estadisticas.refresh();
+        PlayerPrefs.SetInt("Sangre", sangre);
     }
 
 
 	public void aumentarHambre(int cantidad){
 		hambre += cantidad;
         estadisticas.refresh();
+        PlayerPrefs.SetInt("Hambre", hambre);
     }
 	public void disminuirHambre(int cantidad){
-        if (hambre <= 0)
+        if (hambre >= cantidad)
         {
             hambre -= cantidad;
-            estadisticas.refresh();
         }
+        else
+        {
+            hambre = 0;
+            
+        }
+        estadisticas.refresh();
+        PlayerPrefs.SetInt("Hambre", hambre);
     }
 
 
 	public void aumentarFiesta(int cantidad){
 		fiesta += cantidad;
         estadisticas.refresh();
+        PlayerPrefs.SetInt("Fiesta", fiesta);
     }
 	public void disminuirFiesta(int cantidad){
-        if (fiesta <= 0)
+        if (fiesta >= cantidad)
         {
             fiesta -= cantidad;
-            estadisticas.refresh();
         }
+        else
+        {
+            fiesta = 0;
+        }
+        PlayerPrefs.SetInt("Fiesta", fiesta);
     }
 
 
 	public void aumentarPoblacion(int cantidad){
 		poblacion += cantidad;
         estadisticas.refresh();
+        PlayerPrefs.SetInt("Poblacion", poblacion);
     }
 	public void disminuirPoblacion(int cantidad){
-		poblacion -= cantidad;
-        estadisticas.refresh();
+        if (poblacion >= cantidad)
+        {
+            poblacion -= cantidad;
+        }
+        else
+        {
+            poblacion = 0;
+        }
+        PlayerPrefs.SetInt("Poblacion", poblacion);
     }
 
 	public void variablesNuevoDia(){
@@ -74,6 +100,7 @@ public class VariableManager : MonoBehaviour {
         aumentarPoblacion(variacionPoblacion);
 
         dias++;
+        PlayerPrefs.SetInt("Dias", dias);
 
 	}
 
