@@ -65,15 +65,11 @@ public class GameManager : MonoBehaviour {
             PlayerPrefs.SetInt("HambreFinal", variables.hambre);
             PlayerPrefs.SetInt("SangreFinal", variables.sangre);
             PlayerPrefs.SetInt("FiestaFinal", variables.fiesta);
-
             //Reseteamos los datos
             PlayerPrefs.SetInt("Poblacion", 0);
             PlayerPrefs.SetInt("Hambre", 0);
             PlayerPrefs.SetInt("Sangre", 0);
             PlayerPrefs.SetInt("Fiesta", 0);
-
-            //Aqui ya cambiamos a la escena de intro
-            morido.gameObject.SetActive(true);
         }
     }
 }
