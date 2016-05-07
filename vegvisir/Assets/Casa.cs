@@ -15,22 +15,25 @@ public class Casa : MonoBehaviour {
     {
         if (!ocupada)
         {
+            ocupada = true;
             mommentStart = Time.timeSinceLevelLoad;
             fotoPareja.gameObject.SetActive(true);
         }
     }
 
     public void cerrarPareja(){
-        fotoPareja.gameObject.SetActive(false);
         ocupada = false;
-        parejas.restarVida();
+        fotoPareja.gameObject.SetActive(false);
+        mommentStart = 0;
     }
 
     void Update()
     {
-        if (Time.timeSinceLevelLoad - mommentStart > 1.0f && mommentStart!=0)
-        {       
-            mommentStart = 0;
+        if(ocupada)
+        if (Time.timeSinceLevelLoad - mommentStart > 2.2f )
+        {
+           if(parejas.vidas>0)
+            parejas.restarVida();
             cerrarPareja();
         }
     }

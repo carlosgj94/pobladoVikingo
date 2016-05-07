@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ResultadoEvento : MonoBehaviour {
     [SerializeField]
@@ -19,5 +20,9 @@ public class ResultadoEvento : MonoBehaviour {
     {
         gameManager.siguientePaso();
         this.gameObject.SetActive(false);
+    }
+    public void irEscena1()
+    {
+        SceneManager.LoadScene("Scene1");
     }
 }
