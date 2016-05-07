@@ -60,6 +60,7 @@ public class juegoBarcos : MonoBehaviour {
 	}
 
 	void checkAcabado (){
+		
 		if(vidas == 0)
 		{
 			acabado = true;
@@ -76,7 +77,11 @@ public class juegoBarcos : MonoBehaviour {
 			puntuacionFinal.text = "Has alzanzado la puntuación máxima.\n Tu puntuacion ha sido de: " + puntos + "\n El ansia de sangre ha disminuido " + puntos/2;
 
 			PlayerPrefs.SetInt("PuntosBarco", puntos);
-			PlayerPrefs.SetInt ("Sangre", PlayerPrefs.GetInt ("Sangre") - puntos / 2);
+			if(PlayerPrefs.GetInt ("Sangre")>(puntos/2)){
+				PlayerPrefs.SetInt ("Sangre", PlayerPrefs.GetInt ("Sangre") - puntos / 2);
+			}else{
+				PlayerPrefs.SetInt ("Sangre", 0);
+			}
 		}
 	}
 
