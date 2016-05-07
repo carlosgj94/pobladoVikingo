@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-using System.Collections;
 using UnityEngine.SceneManagement;
 
 public class BeerGame : MonoBehaviour {
+    public AudioSource audioS;
+    public AudioClip eructoAudio;
+
 
     private float momment;
     private float mommentViking;
@@ -35,8 +37,10 @@ public class BeerGame : MonoBehaviour {
         momment = -1.6f;
         mommentViking = 0.0f;
         morido = false;
-        Debug.Log(Time.timeSinceLevelLoad);
-	}
+        //Aqui va audio
+        audioS.clip = eructoAudio;
+        audioS.Play();
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -87,7 +91,6 @@ public class BeerGame : MonoBehaviour {
         {
             resultado.gameObject.SetActive(true);
             contenidoResultado.text = "Has hecho "+puntos+" puntos.\nEsto son "+puntos/2+ " que se te restan a la fiesta";
-            
         }
 	}
     public void beerFinalClick()

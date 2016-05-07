@@ -4,6 +4,10 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 
 public class ParejasController : MonoBehaviour {
+    [SerializeField]
+    private AudioSource audioS;
+    [SerializeField]
+    private AudioClip sexyTime;
     private float momment;
     
     [SerializeField]
@@ -53,6 +57,8 @@ public class ParejasController : MonoBehaviour {
     {
         if (vidas > 0)
         {
+            audioS.clip = sexyTime;
+            audioS.Play();
             listaCasas[number].cerrarPareja();
             points++;
             puntosTexto.text = points + " puntos";

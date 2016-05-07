@@ -8,6 +8,11 @@ public class LanzaManecilla : MonoBehaviour {
 	public Vector3 angulo1;
 	public Vector3 angulo2;
 
+    [SerializeField]
+    AudioSource audioS;
+    [SerializeField]
+    AudioClip lanzaAudio;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -24,7 +29,9 @@ public class LanzaManecilla : MonoBehaviour {
 
 	public void OnClick(){
 		lanza.gameObject.SetActive (true);
-		//Instantiate (lanza, new Vector3 (0, 0, 0), Quaternion.Euler(angulo));
+        //Instantiate (lanza, new Vector3 (0, 0, 0), Quaternion.Euler(angulo));
+        audioS.clip = lanzaAudio;
+        audioS.Play();
 		Instantiate (lanza, new Vector3 (0, 0, 0), Quaternion.Euler(angulo1));
 		Instantiate (lanza, new Vector3 (0, 0, 0), Quaternion.Euler(angulo2));
 		lanza.gameObject.SetActive (false);
