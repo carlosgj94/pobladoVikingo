@@ -7,6 +7,10 @@ TagManager:
   - Pollo
   - Flecha
   - Vikingo
+  - BarcoVikingo
+  - BarcoEnemigo
+  - Lanza
+  - Pared
   layers:
   - Default
   - TransparentFX

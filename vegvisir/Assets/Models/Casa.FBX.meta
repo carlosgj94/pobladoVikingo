@@ -1,0 +1,213 @@
+fileFormatVersion: 2
+guid: ece109142ae34ec4cbb94f51608c9af3
+timeCreated: 1462630422
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: MarcoPuertaSalonComunal001
+    100004: ParedCasa
+    100006: PuertaCasaComunal002
+    100008: PuertaCasaComunal003
+    100010: Tejado011
+    100012: Tejado012
+    100014: Tejado013
+    100016: Tejado014
+    100018: Tejado015
+    100020: Tejado016
+    100022: Tejado017
+    100024: Tejado018
+    100026: Tejado019
+    100028: Tejado020
+    100030: VigaDragonTejado002
+    100032: VigaDragonTejado003
+    100034: VigaTejado020
+    100036: VigaTejado021
+    100038: VigaTejado022
+    100040: VigaTejado023
+    100042: VigaTejado024
+    100044: VigaTejado025
+    100046: VigaTejado026
+    100048: VigaTejado027
+    100050: VigaTejado028
+    100052: VigaTejado029
+    100054: VigaTejado030
+    100056: VigaTejado031
+    400000: //RootNode
+    400002: MarcoPuertaSalonComunal001
+    400004: ParedCasa
+    400006: PuertaCasaComunal002
+    400008: PuertaCasaComunal003
+    400010: Tejado011
+    400012: Tejado012
+    400014: Tejado013
+    400016: Tejado014
+    400018: Tejado015
+    400020: Tejado016
+    400022: Tejado017
+    400024: Tejado018
+    400026: Tejado019
+    400028: Tejado020
+    400030: VigaDragonTejado002
+    400032: VigaDragonTejado003
+    400034: VigaTejado020
+    400036: VigaTejado021
+    400038: VigaTejado022
+    400040: VigaTejado023
+    400042: VigaTejado024
+    400044: VigaTejado025
+    400046: VigaTejado026
+    400048: VigaTejado027
+    400050: VigaTejado028
+    400052: VigaTejado029
+    400054: VigaTejado030
+    400056: VigaTejado031
+    2300000: MarcoPuertaSalonComunal001
+    2300002: ParedCasa
+    2300004: PuertaCasaComunal002
+    2300006: PuertaCasaComunal003
+    2300008: Tejado011
+    2300010: Tejado012
+    2300012: Tejado013
+    2300014: Tejado014
+    2300016: Tejado015
+    2300018: Tejado016
+    2300020: Tejado017
+    2300022: Tejado018
+    2300024: Tejado019
+    2300026: Tejado020
+    2300028: VigaDragonTejado002
+    2300030: VigaDragonTejado003
+    2300032: VigaTejado020
+    2300034: VigaTejado021
+    2300036: VigaTejado022
+    2300038: VigaTejado023
+    2300040: VigaTejado024
+    2300042: VigaTejado025
+    2300044: VigaTejado026
+    2300046: VigaTejado027
+    2300048: VigaTejado028
+    2300050: VigaTejado029
+    2300052: VigaTejado030
+    2300054: VigaTejado031
+    3300000: MarcoPuertaSalonComunal001
+    3300002: ParedCasa
+    3300004: PuertaCasaComunal002
+    3300006: PuertaCasaComunal003
+    3300008: Tejado011
+    3300010: Tejado012
+    3300012: Tejado013
+    3300014: Tejado014
+    3300016: Tejado015
+    3300018: Tejado016
+    3300020: Tejado017
+    3300022: Tejado018
+    3300024: Tejado019
+    3300026: Tejado020
+    3300028: VigaDragonTejado002
+    3300030: VigaDragonTejado003
+    3300032: VigaTejado020
+    3300034: VigaTejado021
+    3300036: VigaTejado022
+    3300038: VigaTejado023
+    3300040: VigaTejado024
+    3300042: VigaTejado025
+    3300044: VigaTejado026
+    3300046: VigaTejado027
+    3300048: VigaTejado028
+    3300050: VigaTejado029
+    3300052: VigaTejado030
+    3300054: VigaTejado031
+    4300000: VigaTejado031
+    4300002: VigaTejado030
+    4300004: Tejado015
+    4300006: Tejado014
+    4300008: Tejado012
+    4300010: Tejado011
+    4300012: VigaDragonTejado002
+    4300014: MarcoPuertaSalonComunal001
+    4300016: VigaDragonTejado003
+    4300018: PuertaCasaComunal003
+    4300020: ParedCasa
+    4300022: PuertaCasaComunal002
+    4300024: Tejado013
+    4300026: Tejado016
+    4300028: Tejado018
+    4300030: Tejado019
+    4300032: Tejado017
+    4300034: VigaTejado026
+    4300036: VigaTejado027
+    4300038: VigaTejado029
+    4300040: VigaTejado028
+    4300042: VigaTejado021
+    4300044: VigaTejado025
+    4300046: VigaTejado020
+    4300048: VigaTejado023
+    4300050: VigaTejado024
+    4300052: VigaTejado022
+    4300054: Tejado020
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,123 @@
+fileFormatVersion: 2
+guid: e6f84032d3af4a445bd7aa9dd47814a2
+timeCreated: 1462634452
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: CabezaDrakkar
+    100002: CabezaDrakkar001
+    100004: CascoBaborDrakkar
+    100006: CascoBaborDrakkar001
+    100008: ColaDrakkar
+    100010: ColaDrakkar001
+    100012: CubiertaDrakkar
+    100014: //RootNode
+    100016: MastilDrakkar
+    100018: "Travesa\xF1oDrakkar"
+    100020: VelaDrakkar
+    400000: CabezaDrakkar
+    400002: CabezaDrakkar001
+    400004: CascoBaborDrakkar
+    400006: CascoBaborDrakkar001
+    400008: ColaDrakkar
+    400010: ColaDrakkar001
+    400012: CubiertaDrakkar
+    400014: //RootNode
+    400016: MastilDrakkar
+    400018: "Travesa\xF1oDrakkar"
+    400020: VelaDrakkar
+    2300000: CabezaDrakkar
+    2300002: CabezaDrakkar001
+    2300004: CascoBaborDrakkar
+    2300006: CascoBaborDrakkar001
+    2300008: ColaDrakkar
+    2300010: ColaDrakkar001
+    2300012: CubiertaDrakkar
+    2300014: MastilDrakkar
+    2300016: "Travesa\xF1oDrakkar"
+    2300018: VelaDrakkar
+    3300000: CabezaDrakkar
+    3300002: CabezaDrakkar001
+    3300004: CascoBaborDrakkar
+    3300006: CascoBaborDrakkar001
+    3300008: ColaDrakkar
+    3300010: ColaDrakkar001
+    3300012: CubiertaDrakkar
+    3300014: MastilDrakkar
+    3300016: "Travesa\xF1oDrakkar"
+    3300018: VelaDrakkar
+    4300000: ColaDrakkar
+    4300002: CubiertaDrakkar
+    4300004: CascoBaborDrakkar001
+    4300006: ColaDrakkar001
+    4300008: CabezaDrakkar
+    4300010: VelaDrakkar
+    4300012: "Travesa\xF1oDrakkar"
+    4300014: MastilDrakkar
+    4300016: CabezaDrakkar001
+    4300018: CascoBaborDrakkar
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,118 @@
+fileFormatVersion: 2
+guid: c72ca9b0074ee1347a1da9586a7cc496
+timeCreated: 1462630422
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: MaderoEmbarcadero001
+    100004: MaderoEmbarcadero002
+    100006: SueloEmbarcadero001
+    100008: ToconEmbarcadero001
+    100010: ToconEmbarcadero002
+    100012: ToconEmbarcadero003
+    100014: ToconEmbarcadero004
+    100016: ToconEmbarcadero005
+    100018: ToconEmbarcadero006
+    400000: //RootNode
+    400002: MaderoEmbarcadero001
+    400004: MaderoEmbarcadero002
+    400006: SueloEmbarcadero001
+    400008: ToconEmbarcadero001
+    400010: ToconEmbarcadero002
+    400012: ToconEmbarcadero003
+    400014: ToconEmbarcadero004
+    400016: ToconEmbarcadero005
+    400018: ToconEmbarcadero006
+    2300000: MaderoEmbarcadero001
+    2300002: MaderoEmbarcadero002
+    2300004: SueloEmbarcadero001
+    2300006: ToconEmbarcadero001
+    2300008: ToconEmbarcadero002
+    2300010: ToconEmbarcadero003
+    2300012: ToconEmbarcadero004
+    2300014: ToconEmbarcadero005
+    2300016: ToconEmbarcadero006
+    3300000: MaderoEmbarcadero001
+    3300002: MaderoEmbarcadero002
+    3300004: SueloEmbarcadero001
+    3300006: ToconEmbarcadero001
+    3300008: ToconEmbarcadero002
+    3300010: ToconEmbarcadero003
+    3300012: ToconEmbarcadero004
+    3300014: ToconEmbarcadero005
+    3300016: ToconEmbarcadero006
+    4300000: ToconEmbarcadero005
+    4300002: MaderoEmbarcadero001
+    4300004: SueloEmbarcadero001
+    4300006: MaderoEmbarcadero002
+    4300008: ToconEmbarcadero002
+    4300010: ToconEmbarcadero006
+    4300012: ToconEmbarcadero004
+    4300014: ToconEmbarcadero003
+    4300016: ToconEmbarcadero001
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
