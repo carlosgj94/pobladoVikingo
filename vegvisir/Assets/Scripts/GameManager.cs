@@ -32,15 +32,15 @@ public class GameManager : MonoBehaviour {
     }
     void lanzarEvento()
     {
-		int bigRandom = Random.Range (0,2);
+		int bigRandom = Random.Range (0,10);
 
-		if(bigRandom == 0){
+		if(bigRandom <= 4){
 			int random = Random.Range(0, listaEventos.Count);
 	        listaEventos[random].SetActive(true);
-		}else if(bigRandom == 1){
+		}else if(bigRandom <= 7){
 			int random = Random.Range(0, listaNoticias.Count);
 			listaNoticias[random].SetActive(true);
-		}else if(bigRandom == 2){
+		}else if(bigRandom <= 9){
 			int random = Random.Range(0, listaJuegos.Count);
 			listaJuegos[random].SetActive(true);
 		}
