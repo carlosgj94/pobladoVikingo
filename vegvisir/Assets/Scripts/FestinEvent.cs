@@ -35,7 +35,7 @@ public class FestinEvent : MonoBehaviour {
 
 		botonTexto1.text = "Festín opulento";
 		botonTexto2.text = "Festín de tranquis";
-		botonTexto3.text = "Cada uno a su casa";
+		botonTexto3.text = "Cada uno en su casa";
 	}
 	void OnEnable()
 	{
@@ -45,14 +45,14 @@ public class FestinEvent : MonoBehaviour {
 
 		botonTexto1.text = "Festín opulento";
 		botonTexto2.text = "Festín de tranquis";
-		botonTexto3.text = "Cada uno a su casa";
+		botonTexto3.text = "Cada uno en su casa";
 	}
 
 	public void opulentoClick()
 	{
-		int hambre = Random.Range(4, 8);
-		int fiesta = Random.Range(1, 3);
-		int sangre = Random.Range(2, 4);
+		int hambre = Random.Range(4, 9);
+		int fiesta = Random.Range(2, 5);
+		int sangre = Random.Range(1, 4);
 		variables.disminuirHambre(hambre);
 		variables.aumentarFiesta(fiesta);
 		variables.aumentarSangre(sangre);
@@ -63,9 +63,9 @@ public class FestinEvent : MonoBehaviour {
 	}
 	public void tranquisClick()
 	{
-		int hambre = Random.Range(3, 6);
-		int fiesta = Random.Range(2, 4);
-		int sangre = Random.Range(1, 3);
+		int hambre = Random.Range(3, 7);
+		int fiesta = Random.Range(1, 4);
+		int sangre = Random.Range(1, 4);
 		variables.disminuirHambre(hambre);
 		variables.aumentarFiesta(fiesta);
 		variables.aumentarSangre(sangre);
@@ -75,12 +75,11 @@ public class FestinEvent : MonoBehaviour {
 	}
 	public void casaClick()
 	{
-		int poblacion = Random.Range(3, 6);
-		int sangre = Random.Range(1, 3);
-		variables.disminuirPoblacion(poblacion);
-		variables.aumentarSangre(sangre);
+		int poblacion = Random.Range(10, 31);
+
+		variables.disminuirPoblacion (poblacion);
 		resultado.gameObject.SetActive(true);
-		resultado.refresh(0-poblacion, 0, sangre, 0);
+		resultado.refresh(0-poblacion, 0, 0, 0);
 		this.gameObject.SetActive(false);
 	}
 }
