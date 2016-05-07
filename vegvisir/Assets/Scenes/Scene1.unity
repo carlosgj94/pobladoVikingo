@@ -968,6 +968,7 @@ MonoBehaviour:
   - {fileID: 154000773}
   - {fileID: 1453585967}
   morido: {fileID: 1025469911}
+  estadisticas: {fileID: 1613053050}
 --- !u!4 &528574506
 Transform:
   m_ObjectHideFlags: 0
@@ -1109,6 +1110,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0

@@ -32,6 +32,7 @@ public class VikingoKFC : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+
         direction = Input.GetAxisRaw("Horizontal");
         if (Input.touchCount > 0)
         {

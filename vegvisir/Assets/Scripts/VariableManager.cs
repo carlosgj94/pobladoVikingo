@@ -4,20 +4,31 @@ using System.Collections;
 public class VariableManager : MonoBehaviour {
     [SerializeField]
     private EstadisticasManager estadisticas;
-	public int sangre = 0;
-	public int hambre = 0;
-	public int fiesta = 0;
-	public int poblacion = 1000;
-	public int dias = 0;
-    void start()
+	public int sangre;
+	public int hambre;
+	public int fiesta;
+	public int poblacion;
+	public int dias;
+    void OnLevelWasLoaded()
     {
-        if(PlayerPrefs.GetInt("Dias")!=0){
+        
+        if(PlayerPrefs.GetInt("Dias")>0){
+            //Debug.Log(PlayerPrefs.GetInt("Dias"));
             sangre = PlayerPrefs.GetInt("Sangre");
             hambre = PlayerPrefs.GetInt("Hambre");
             fiesta = PlayerPrefs.GetInt("Fiesta");
             poblacion = PlayerPrefs.GetInt("Poblacion");
+            dias = PlayerPrefs.GetInt("Dias");
 
             estadisticas.refresh();
+        }
+        else
+        {
+            sangre = 0;
+            hambre = 0;
+            fiesta = 0;
+            poblacion = 1000;
+            dias = 0;
         }
     }
 	public void aumentarSangre(int cantidad){

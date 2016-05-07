@@ -12,8 +12,11 @@ public class GameManager : MonoBehaviour {
 
     [SerializeField]
     private Text morido;
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    [SerializeField]
+    private EstadisticasManager estadisticas;
+    void Start ()
+    {
         this.siguientePaso();
 	}
 	
