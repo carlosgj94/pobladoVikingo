@@ -67,9 +67,15 @@ public class juegoBarcos : MonoBehaviour {
 			cartel.gameObject.SetActive(true);
 			puntuacionFinal.text = "Has perdido.\n Tu puntuacion ha sido de: " + puntos + "\n El ansia de sangre ha disminuido " + puntos/2;
 
-			PlayerPrefs.SetInt("PuntosBarco", puntos);
-			PlayerPrefs.SetInt ("Sangre", PlayerPrefs.GetInt ("Sangre") - puntos / 2);
-		}
+            PlayerPrefs.SetInt("PuntosBarco", puntos);
+            if (PlayerPrefs.GetInt("Sangre") > (puntos / 2))
+            {
+                PlayerPrefs.SetInt("Sangre", PlayerPrefs.GetInt("Sangre") - puntos / 2);
+            }
+            else {
+                PlayerPrefs.SetInt("Sangre", 0);
+            }
+        }
 
 		if(puntos == 50){
 			acabado = true;
