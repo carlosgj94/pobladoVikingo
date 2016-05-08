@@ -126,8 +126,10 @@ public class VariableManager : MonoBehaviour {
 		int variacionPoblacion = (int)Mathf.Round((poblacion * Random.Range(-5,5))/100);
         aumentarPoblacion(variacionPoblacion);
 
+        estadisticas.refresh();
         dias++;
         PlayerPrefs.SetInt("Dias", dias);
+        
 
 	}
 

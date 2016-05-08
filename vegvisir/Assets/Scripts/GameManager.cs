@@ -36,6 +36,8 @@ public class GameManager : MonoBehaviour {
     {
         if (variables.dias % 5 == 0)
         {
+            variables.dias++;
+            PlayerPrefs.SetInt("Dias", variables.dias);
             SceneManager.LoadScene("Aldea");
         }
         else {
@@ -88,7 +90,7 @@ public class GameManager : MonoBehaviour {
 
 			muerto = false;
 		} else {
-			lanzarEvento();
+            lanzarEvento();
 		}
     }
 }
