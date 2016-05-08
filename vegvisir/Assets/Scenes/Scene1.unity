@@ -2307,7 +2307,6 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -2657,6 +2656,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1084402068}
   - 212: {fileID: 1084402067}
+  - 95: {fileID: 1084402069}
   m_Layer: 0
   m_Name: Wallpaper
   m_TagString: Untagged
@@ -2706,6 +2706,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
+--- !u!95 &1084402069
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1084402066}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 90f36c1009bb53f468c6a0f483d0b267, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!224 &1153109330 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 22447810, guid: c9b759967a2a32144b10607dbc8035bd,
