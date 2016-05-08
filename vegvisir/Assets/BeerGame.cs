@@ -100,27 +100,27 @@ public class BeerGame : MonoBehaviour {
 
                 puntos += clicks;
 
-				if (clicks > 8) {
+				if (clicks > 9) {
 					morido = true;
 					barraImagen.sprite = Resources.Load ("Beer/" + "barracerveza100", typeof(Sprite)) as Sprite;
 					vikingoBorracho.gameObject.SetActive (true);
-				} else if (clicks > 7) {
+				} else if (clicks > 8) {
 					vikingoBorracho.gameObject.SetActive (true);
 					barraImagen.sprite = Resources.Load ("Beer/" + "barracerveza85", typeof(Sprite)) as Sprite;
 					vikingoBorracho.gameObject.SetActive (true);
-				} else if (clicks > 6) {
+				} else if (clicks > 7) {
 					barraImagen.sprite = Resources.Load ("Beer/" + "barracerveza75", typeof(Sprite)) as Sprite;
 					vikingoBorracho.gameObject.SetActive (true);
-				} else if (clicks > 5) {
+				} else if (clicks > 6) {
 					barraImagen.sprite = Resources.Load ("Beer/" + "barracerveza66", typeof(Sprite)) as Sprite;
 					vikingoBorracho.gameObject.SetActive (true);
-				} else if (clicks > 4) {
+				} else if (clicks > 5) {
 					barraImagen.sprite = Resources.Load ("Beer/" + "barracerveza50", typeof(Sprite)) as Sprite;
 					vikingoBorracho.gameObject.SetActive (true);
-				} else if (clicks > 3) {
+				} else if (clicks > 4) {
 					barraImagen.sprite = Resources.Load ("Beer/" + "barracerveza25", typeof(Sprite)) as Sprite;
 					vikingoBorracho.gameObject.SetActive (false);
-				} else if (clicks > 2) {
+				} else if (clicks > 3) {
 					barraImagen.sprite = Resources.Load ("Beer/" + "barracerveza0", typeof(Sprite)) as Sprite;
 					vikingoBorracho.gameObject.SetActive (false);
 				}
