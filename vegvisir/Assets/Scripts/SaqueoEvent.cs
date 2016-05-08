@@ -50,9 +50,9 @@ public class SaqueoEvent : MonoBehaviour {
 
 	public void paredesClick()
 	{
-		int sangre = Random.Range(2, 11);
-		int poblacion = Random.Range(50, 101);
-		int hambre = Random.Range(5, 11);
+		int sangre = Random.Range(7, 16);
+		int poblacion = Random.Range(50, 151);
+		int hambre = Random.Range(10, 16);
 
 		variables.disminuirSangre(sangre);
 		variables.disminuirPoblacion(poblacion);
@@ -66,8 +66,8 @@ public class SaqueoEvent : MonoBehaviour {
 	public void saqueoClick()
 	{
 		int sangre = Random.Range(1,7);
-		int poblacion = Random.Range(40, 81);
-		int hambre = Random.Range(4,9);
+		int poblacion = Random.Range(90, 131);
+		int hambre = Random.Range(9,14);
 
 		variables.disminuirSangre(sangre);
 		variables.disminuirPoblacion(poblacion);
@@ -79,7 +79,7 @@ public class SaqueoEvent : MonoBehaviour {
 
 	public void otroClick()
 	{
-		int fiesta = Random.Range(4, 9);
+		int fiesta = Random.Range(9, 14);
 		variables.aumentarFiesta(fiesta);
 		resultado.gameObject.SetActive(true);
 		resultado.refresh(0, 0, 0, fiesta);
