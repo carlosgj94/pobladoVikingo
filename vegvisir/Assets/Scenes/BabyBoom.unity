@@ -1198,7 +1198,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11468164, guid: 24620a39731b9bd449a6d13a0fcded74, type: 2}
       propertyPath: m_FontData.m_MaxSize
-      value: 40
+      value: 55
       objectReference: {fileID: 0}
     - target: {fileID: 11475296, guid: 24620a39731b9bd449a6d13a0fcded74, type: 2}
       propertyPath: m_FontData.m_MaxSize
