@@ -24,11 +24,17 @@ public class VariableManager : MonoBehaviour {
         }
         else
         {
+			Debug.Log ("Reinicio aldea");
             sangre = 0;
             hambre = 0;
             fiesta = 0;
             poblacion = 1000;
             dias = 0;
+			PlayerPrefs.SetInt ("Poblacion", 1000);
+			PlayerPrefs.SetInt ("Hambre", 0);
+			PlayerPrefs.SetInt ("Sangre", 0);
+			PlayerPrefs.SetInt ("Fiesta", 0);
+			PlayerPrefs.SetInt ("Dias", 0);
         }
     }
 	public void aumentarSangre(int cantidad){

@@ -29,8 +29,8 @@ public class GameManager : MonoBehaviour {
     public void siguientePaso()
     {
         variables.variablesNuevoDia();
-        lanzarEvento();
         checkVidas();
+
     }
     void lanzarEvento()
     {
@@ -70,21 +70,25 @@ public class GameManager : MonoBehaviour {
         else if (variables.fiesta >= 100)
             muerto = true;
 
-        if (muerto)
-        {
-			morido.gameObject.SetActive(true);
+		if (muerto) {
+			morido.gameObject.SetActive (true);
 			contenido.text = "No has conseguido gobernar bien a tu pueblo. \nHas perdido.";
 
-            //Guardamos los datos
-            PlayerPrefs.SetInt("PoblacionFinal", variables.poblacion);
-            PlayerPrefs.SetInt("HambreFinal", variables.hambre);
-            PlayerPrefs.SetInt("SangreFinal", variables.sangre);
-            PlayerPrefs.SetInt("FiestaFinal", variables.fiesta);
-            //Reseteamos los datos
-            PlayerPrefs.SetInt("Poblacion", 0);
-            PlayerPrefs.SetInt("Hambre", 0);
-            PlayerPrefs.SetInt("Sangre", 0);
-            PlayerPrefs.SetInt("Fiesta", 0);
-        }
+			//Guardamos los datos
+			PlayerPrefs.SetInt ("PoblacionFinal", variables.poblacion);
+			PlayerPrefs.SetInt ("HambreFinal", variables.hambre);
+			PlayerPrefs.SetInt ("SangreFinal", variables.sangre);
+			PlayerPrefs.SetInt ("FiestaFinal", variables.fiesta);
+			//Reseteamos los datos
+			PlayerPrefs.SetInt ("Poblacion", 1000);
+			PlayerPrefs.SetInt ("Hambre", 0);
+			PlayerPrefs.SetInt ("Sangre", 0);
+			PlayerPrefs.SetInt ("Fiesta", 0);
+			PlayerPrefs.SetInt ("Dias", 0);
+
+			muerto = false;
+		} else {
+			lanzarEvento();
+		}
     }
 }
