@@ -51,8 +51,8 @@ public class FestinEvent : MonoBehaviour {
 	public void opulentoClick()
 	{
 		int hambre = Random.Range(4, 9);
-		int fiesta = Random.Range(2, 5);
-		int sangre = Random.Range(1, 4);
+		int fiesta = Random.Range(3, 7);
+		int sangre = Random.Range(2, 5);
 		variables.disminuirHambre(hambre);
 		variables.aumentarFiesta(fiesta);
 		variables.aumentarSangre(sangre);
@@ -64,8 +64,8 @@ public class FestinEvent : MonoBehaviour {
 	public void tranquisClick()
 	{
 		int hambre = Random.Range(3, 7);
-		int fiesta = Random.Range(1, 4);
-		int sangre = Random.Range(1, 4);
+		int fiesta = Random.Range(2, 5);
+		int sangre = Random.Range(2, 5);
 		variables.disminuirHambre(hambre);
 		variables.aumentarFiesta(fiesta);
 		variables.aumentarSangre(sangre);
@@ -75,7 +75,7 @@ public class FestinEvent : MonoBehaviour {
 	}
 	public void casaClick()
 	{
-		int poblacion = Random.Range(10, 31);
+		int poblacion = Random.Range(20, 41);
 
 		variables.disminuirPoblacion (poblacion);
 		resultado.gameObject.SetActive(true);

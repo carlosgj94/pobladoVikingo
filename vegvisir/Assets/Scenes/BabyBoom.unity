@@ -785,6 +785,12 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 796176927}
+--- !u!114 &798457101 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11449500, guid: 24620a39731b9bd449a6d13a0fcded74,
+    type: 2}
+  m_PrefabInternal: {fileID: 1053447821}
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!114 &817095699 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11468164, guid: 24620a39731b9bd449a6d13a0fcded74,
@@ -927,6 +933,7 @@ MonoBehaviour:
   puntosTexto: {fileID: 1127941070}
   puntosVida: {fileID: 1703691089}
   popup: {fileID: 357595132}
+  titulo: {fileID: 798457101}
   contenidoPopup: {fileID: 817095699}
 --- !u!4 &887275803
 Transform:
