@@ -51,8 +51,8 @@ public class CelebracionEvent : MonoBehaviour {
 	public void ragnarokClick()
 	{
 		int fiesta = Random.Range(4, 9);
-		int poblacion = Random.Range(20, 41);
-		int sangre = Random.Range(1, 4);
+		int poblacion = Random.Range(30, 61);
+		int sangre = Random.Range(2, 5);
 		variables.disminuirFiesta(fiesta);
 		variables.disminuirPoblacion(poblacion);
 		variables.aumentarHambre(sangre);
@@ -65,8 +65,8 @@ public class CelebracionEvent : MonoBehaviour {
 	public void hidromielClick()
 	{
 		int fiesta = Random.Range(3, 7);
-		int poblacion = Random.Range(10, 31);
-		int sangre = Random.Range(1, 4);
+		int poblacion = Random.Range(20, 41);
+		int sangre = Random.Range(2, 5);
 		variables.disminuirFiesta(fiesta);
 		variables.disminuirPoblacion(poblacion);
 		variables.aumentarHambre(sangre);
@@ -77,7 +77,7 @@ public class CelebracionEvent : MonoBehaviour {
 
 	public void nadaClick()
 	{
-		int hambre = Random.Range(1, 4);
+		int hambre = Random.Range(2, 5);
 		variables.aumentarHambre(hambre);
 		resultado.gameObject.SetActive(true);
 		resultado.refresh(0, 0, hambre, 0);

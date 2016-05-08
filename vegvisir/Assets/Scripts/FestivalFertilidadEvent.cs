@@ -46,9 +46,9 @@ public class FestivalFertilidadEvent : MonoBehaviour {
 	}
 	public void lluviaClick()
 	{
-		int poblacion = Random.Range(40, 81);
-		int hambre = Random.Range(2, 5);
-		int fiesta = Random.Range(1, 4);
+		int poblacion = Random.Range(40, 91);
+		int hambre = Random.Range(3, 7);
+		int fiesta = Random.Range(2, 5);
 
 		variables.aumentarPoblacion(poblacion);
 		variables.aumentarHambre(hambre);
@@ -62,8 +62,8 @@ public class FestivalFertilidadEvent : MonoBehaviour {
 	public void pasarseClick()
 	{
 		int poblacion = Random.Range(30, 61);
-		int hambre = Random.Range(1, 4);
-		int fiesta = Random.Range(1, 4);
+		int hambre = Random.Range(2, 5);
+		int fiesta = Random.Range(2, 5);
 		variables.aumentarHambre(hambre);
 		variables.aumentarFiesta(fiesta);
 		resultado.gameObject.SetActive(true);
