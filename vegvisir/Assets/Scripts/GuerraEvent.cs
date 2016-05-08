@@ -60,10 +60,10 @@ public class GuerraEvent : MonoBehaviour {
     {
         audioS.clip = retiradaMusic;
         audioS.Play();
-        int poblacion = Random.Range(20, 41);
-        int hambre = Random.Range(2, 5);
-        int sangre = Random.Range(3, 7);
-        int fiesta = Random.Range(3, 7);
+        int poblacion = Random.Range(80, 150);
+        int hambre = Random.Range(6, 10);
+        int sangre = Random.Range(8, 12);
+        int fiesta = Random.Range(8, 12);
         variables.disminuirPoblacion(poblacion);
         variables.aumentarHambre(hambre);
         variables.aumentarSangre(sangre);
@@ -77,9 +77,9 @@ public class GuerraEvent : MonoBehaviour {
     {
         audioS.clip = pactoMusic;
         audioS.Play();
-        int hambre = Random.Range(3, 7);
-        int sangre = Random.Range(4, 9);
-        int fiesta = Random.Range(3, 7);
+        int hambre = Random.Range(8,12);
+        int sangre = Random.Range(9, 14);
+        int fiesta = Random.Range(8, 12);
         variables.aumentarHambre(hambre);
         variables.aumentarSangre(sangre);
         variables.aumentarFiesta(fiesta);
@@ -98,13 +98,13 @@ public class GuerraEvent : MonoBehaviour {
         if (Random.Range(0, 1) == 0)
         {
             //Ganas
-            poblacion = Random.Range(50, 101);
-            sangre = Random.Range(2, 5);
-            fiesta = Random.Range(3, 7);
+            poblacion = Random.Range(150, 250);
+            sangre = Random.Range(7, 10);
+            fiesta = Random.Range(8, 12);
 
-            variables.disminuirPoblacion(Random.Range(7, 15));
-            variables.disminuirSangre(Random.Range(2, 5));
-            variables.aumentarFiesta(Random.Range(2, 5));
+            variables.disminuirPoblacion(poblacion);
+            variables.disminuirSangre(sangre);
+            variables.aumentarFiesta(fiesta);
 
             resultado.gameObject.SetActive(true);
             resultado.refresh(0 - poblacion, 0, 0-sangre, fiesta);
@@ -112,14 +112,14 @@ public class GuerraEvent : MonoBehaviour {
         else
         {
             //Pierdes
-            poblacion = Random.Range(75, 151);
-            hambre = Random.Range(1, 4);
-            sangre = Random.Range(2, 5);
-            fiesta = Random.Range(2, 5);
-            variables.disminuirPoblacion(Random.Range(10, 18));
-            variables.aumentarHambre(Random.Range(1, 3));
-            variables.disminuirSangre(Random.Range(2, 4));
-            variables.aumentarFiesta(Random.Range(2, 4));
+            poblacion = Random.Range(200, 350);
+            hambre = Random.Range(11, 14);
+            sangre = Random.Range(12, 15);
+            fiesta = Random.Range(12, 15);
+            variables.disminuirPoblacion(poblacion);
+            variables.aumentarHambre(hambre);
+            variables.disminuirSangre(sangre);
+            variables.aumentarFiesta(fiesta);
 
             resultado.gameObject.SetActive(true);
             resultado.refresh(0 - poblacion, hambre, 0-sangre, fiesta);
