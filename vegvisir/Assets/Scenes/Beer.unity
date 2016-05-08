@@ -322,7 +322,7 @@ MonoBehaviour:
   puntosTexto: {fileID: 1529576204}
   resultado: {fileID: 535178475}
   contenidoResultado: {fileID: 1548251026}
-  vikingoBorracho: {fileID: 0}
+  vikingoBorracho: {fileID: 907572692}
 --- !u!1 &247983131
 GameObject:
   m_ObjectHideFlags: 0
@@ -451,6 +451,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -698,7 +699,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &907572693
 SpriteRenderer:
   m_ObjectHideFlags: 0
