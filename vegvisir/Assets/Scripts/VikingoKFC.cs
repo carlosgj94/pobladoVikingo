@@ -34,13 +34,23 @@ public class VikingoKFC : MonoBehaviour {
     [SerializeField]
     private PolloKfc flechaObject;
 
+	[SerializeField]
+	private GameObject vikingoHerido;
+	private float spriteTime;
+
     void start()
     {
         momment = -0.4f;
+		spriteTime = -0.5f;
     }
+
     // Update is called once per frame
     void Update()
     {
+
+		if(Time.time - spriteTime > 0.2f){
+			vikingoHerido.gameObject.SetActive(false);
+		}
 
 		if (!acabado) {
 
@@ -56,7 +66,6 @@ public class VikingoKFC : MonoBehaviour {
 			//Cambiamos las sprites
 
 			if (direction == 0) {
-            
 				this.GetComponent<SpriteRenderer> ().sprite = Resources.Load ("kfc/" + "vikingo03", typeof(Sprite)) as Sprite;
 			} else if (direction < 0) {
 				this.GetComponent<SpriteRenderer> ().sprite = Resources.Load ("Kfc/" + "vikingo01", typeof(Sprite)) as Sprite;
@@ -89,6 +98,9 @@ public class VikingoKFC : MonoBehaviour {
 					Destroy (coll.gameObject);
 					checkAcabado ();
 				} else {
+
+					vikingoHerido.gameObject.SetActive(true);
+					spriteTime = Time.time;
 					vidas--;
 					vidasTexto.text = vidas + " Vidas";
 					checkAcabado ();
@@ -96,6 +108,8 @@ public class VikingoKFC : MonoBehaviour {
 			} else {
 				//Morir
 				if (coll.gameObject.GetComponent<PolloKfc> ().spawnDirection == direction) {
+					vikingoHerido.gameObject.SetActive(true);
+					spriteTime = Time.time;
 					vidas--;
 					vidasTexto.text = vidas + " Vidas";
 					checkAcabado ();
