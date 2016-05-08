@@ -22,6 +22,8 @@ public class ParejasController : MonoBehaviour {
 
     [SerializeField]
     private GameObject popup;
+	[SerializeField]
+	private Text titulo;
     [SerializeField]
     private Text contenidoPopup;
 	// Use this for initialization
@@ -31,7 +33,7 @@ public class ParejasController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (vidas > 0)
+		if (vidas > 0 && points < 50)
         {
             if (Time.timeSinceLevelLoad - momment > 0.9f)
             {
@@ -47,15 +49,20 @@ public class ParejasController : MonoBehaviour {
         }
         else
         {
-            //Aqui se va a liar una gorda!
-            popup.gameObject.SetActive(true);
-            contenidoPopup.text = "Has logrado: " + points + ".\nQue son: " + points * 5 + " personas nuevas.\nVaya semental!";
-            PlayerPrefs.SetInt("Poblacion", PlayerPrefs.GetInt("Poblacion")+points*5);
+			//Aqui se va a liar una gorda!
+			if (vidas <= 0) {
+				titulo.text = "Has perdido";
+			} else {
+				titulo.text = "Has ganado";
+			}
+			popup.gameObject.SetActive (true);
+			contenidoPopup.text = "Has logrado: " + points + ".\nQue son: " + points * 5 + " personas nuevas.\nVaya semental!";
+			PlayerPrefs.SetInt ("Poblacion", PlayerPrefs.GetInt ("Poblacion") + points * 5);
         }
 	}
     public void houseChecked(int number)
     {
-        if (vidas > 0)
+		if (vidas > 0 && points < 50)
         {
             audioS.clip = sexyTime;
             audioS.Play();
@@ -63,6 +70,7 @@ public class ParejasController : MonoBehaviour {
             points++;
             puntosTexto.text = points + " puntos";
         }
+	
     }
 
     public void restarVida()
