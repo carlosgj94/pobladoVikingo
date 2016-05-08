@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using System.Diagnostics;
 using UnityEngine.SceneManagement;
 
 public class BeerGame : MonoBehaviour {
@@ -30,6 +31,7 @@ public class BeerGame : MonoBehaviour {
     [SerializeField]
     private Text contenidoResultado;
 
+    private bool clickado = false;
    
    
     // Use this for initialization
@@ -41,18 +43,51 @@ public class BeerGame : MonoBehaviour {
         audioS.clip = eructoAudio;
         audioS.Play();
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    [Conditional("UNITY_ANDROID")]
+    private void beberClickAndroid()
+    {
+        if (Input.touchCount > 0)
+            for (int i = 0; i < Input.touchCount; ++i)
+                if (Input.GetTouch(i).phase.Equals(TouchPhase.Began))
+                {
+                    clickado = true;
+                    clicks++;
+                    mommentViking = Time.timeSinceLevelLoad;
+                    this.GetComponent<SpriteRenderer>().sprite = Resources.Load("Beer/" + "borracho02", typeof(Sprite)) as Sprite;
+                }
+    }
+    [Conditional("UNITY_STANDALONE_WIN")]
+    private void beberClick()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            clickado = true;
+            clicks++;
+            mommentViking = Time.timeSinceLevelLoad;
+            this.GetComponent<SpriteRenderer>().sprite = Resources.Load("Beer/" + "borracho02", typeof(Sprite)) as Sprite;
+        }
+    }
+    [Conditional("UNITY_EDITOR_WIN")]
+    private void beberClickEditor()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            clickado = true;
+            clicks++;
+            mommentViking = Time.timeSinceLevelLoad;
+            this.GetComponent<SpriteRenderer>().sprite = Resources.Load("Beer/" + "borracho02", typeof(Sprite)) as Sprite;
+        }
+    }
+    // Update is called once per frame
+    void Update () {
         if (Time.timeSinceLevelLoad < 10.0f && !morido)
         {
-            if (Input.touchCount > 0 || Input.GetMouseButtonDown(0))
-            {
-                clicks++;
-                mommentViking = Time.timeSinceLevelLoad;
-                this.GetComponent<SpriteRenderer>().sprite = Resources.Load("Beer/" + "borracho02", typeof(Sprite)) as Sprite;
-            }
-            else {
+            beberClick();
+            beberClickAndroid();
+            beberClickEditor();
+        
+            if(clickado) {
                 if (Time.timeSinceLevelLoad - mommentViking > 0.1f)
                     this.GetComponent<SpriteRenderer>().sprite = Resources.Load("Beer/" + "borracho01", typeof(Sprite)) as Sprite;
             }
