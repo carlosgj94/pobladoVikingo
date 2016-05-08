@@ -50,7 +50,7 @@ public class SaqueoEvent : MonoBehaviour {
 
 	public void paredesClick()
 	{
-		int sangre = Random.Range(3, 9);
+		int sangre = Random.Range(2, 9);
 		int poblacion = Random.Range(40, 61);
 		int hambre = Random.Range(3, 5);
 
@@ -65,7 +65,7 @@ public class SaqueoEvent : MonoBehaviour {
 
 	public void saqueoClick()
 	{
-		int sangre = Random.Range(2,7);
+		int sangre = Random.Range(1,7);
 		int poblacion = Random.Range(30, 41);
 		int hambre = Random.Range(3,5);
 
