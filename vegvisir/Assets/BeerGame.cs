@@ -33,7 +33,9 @@ public class BeerGame : MonoBehaviour {
 
     private bool clickado = false;
    
-   
+	[SerializeField]
+	private GameObject vikingoBorracho;
+
     // Use this for initialization
     void Start () {
         momment = -1.6f;
@@ -98,24 +100,31 @@ public class BeerGame : MonoBehaviour {
 
                 puntos += clicks;
 
-                if (clicks > 8)
-                {
-                    morido = true;
-                    barraImagen.sprite = Resources.Load("Beer/" + "barracerveza100", typeof(Sprite)) as Sprite;
-                }
-                else if (clicks > 7)
-                    barraImagen.sprite = Resources.Load("Beer/" + "barracerveza85", typeof(Sprite)) as Sprite;
-                else if (clicks > 6)
-                    barraImagen.sprite = Resources.Load("Beer/" + "barracerveza75", typeof(Sprite)) as Sprite;
-                else if (clicks > 5)
-                    barraImagen.sprite = Resources.Load("Beer/" + "barracerveza66", typeof(Sprite)) as Sprite;
-                else if (clicks > 4)
-                    barraImagen.sprite = Resources.Load("Beer/" + "barracerveza50", typeof(Sprite)) as Sprite;
-                else if (clicks > 3)
-                    barraImagen.sprite = Resources.Load("Beer/" + "barracerveza25", typeof(Sprite)) as Sprite;
-                else if (clicks > 2)
-                    barraImagen.sprite = Resources.Load("Beer/" + "barracerveza0", typeof(Sprite)) as Sprite;
-
+				if (clicks > 8) {
+					morido = true;
+					barraImagen.sprite = Resources.Load ("Beer/" + "barracerveza100", typeof(Sprite)) as Sprite;
+					vikingoBorracho.gameObject.SetActive (true);
+				} else if (clicks > 7) {
+					vikingoBorracho.gameObject.SetActive (true);
+					barraImagen.sprite = Resources.Load ("Beer/" + "barracerveza85", typeof(Sprite)) as Sprite;
+					vikingoBorracho.gameObject.SetActive (true);
+				} else if (clicks > 6) {
+					barraImagen.sprite = Resources.Load ("Beer/" + "barracerveza75", typeof(Sprite)) as Sprite;
+					vikingoBorracho.gameObject.SetActive (true);
+				} else if (clicks > 5) {
+					barraImagen.sprite = Resources.Load ("Beer/" + "barracerveza66", typeof(Sprite)) as Sprite;
+					vikingoBorracho.gameObject.SetActive (true);
+				} else if (clicks > 4) {
+					barraImagen.sprite = Resources.Load ("Beer/" + "barracerveza50", typeof(Sprite)) as Sprite;
+					vikingoBorracho.gameObject.SetActive (true);
+				} else if (clicks > 3) {
+					barraImagen.sprite = Resources.Load ("Beer/" + "barracerveza25", typeof(Sprite)) as Sprite;
+					vikingoBorracho.gameObject.SetActive (false);
+				} else if (clicks > 2) {
+					barraImagen.sprite = Resources.Load ("Beer/" + "barracerveza0", typeof(Sprite)) as Sprite;
+					vikingoBorracho.gameObject.SetActive (false);
+				}
+				
                 clicks = 0;
                 counterText.text = "Tiempo: " + (10 - (int) Time.timeSinceLevelLoad);
                 puntosTexto.text = "Puntos: " + puntos;
