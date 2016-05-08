@@ -128,7 +128,11 @@ public class VikingoKFC : MonoBehaviour {
 			puntuacionFinal.text = "Has perdido.\n Tu puntuacion ha sido de: " + puntos + "\n El hambre ha disminuido en " + puntos/2;
 
             PlayerPrefs.SetInt("PuntosKfc", puntos);
-			PlayerPrefs.SetInt ("Hambre", PlayerPrefs.GetInt ("Hambre") - puntos / 2);
+            if((PlayerPrefs.GetInt("Hambre") - puntos/2)<=0){
+                PlayerPrefs.SetInt("Hambre", 0);
+            }
+            else
+		    	PlayerPrefs.SetInt ("Hambre", PlayerPrefs.GetInt ("Hambre") - puntos / 2);
         }
 
 		if(puntos == 50)
