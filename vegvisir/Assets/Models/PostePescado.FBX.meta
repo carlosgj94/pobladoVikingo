@@ -1,0 +1,128 @@
+fileFormatVersion: 2
+guid: 83de04e4456ea3944af5dde40b3231df
+timeCreated: 1462649430
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: PaloMadera
+    100002: PaloMadera001
+    100004: PaloMadera003
+    100006: PaloMadera004
+    100008: PaloMadera005
+    100010: Pescado001
+    100012: Pescado002
+    100014: Pescado003
+    100016: Pescado004
+    100018: Pescado005
+    100020: Pescado006
+    100022: //RootNode
+    400000: PaloMadera
+    400002: PaloMadera001
+    400004: PaloMadera003
+    400006: PaloMadera004
+    400008: PaloMadera005
+    400010: Pescado001
+    400012: Pescado002
+    400014: Pescado003
+    400016: Pescado004
+    400018: Pescado005
+    400020: Pescado006
+    400022: //RootNode
+    2300000: PaloMadera
+    2300002: PaloMadera001
+    2300004: PaloMadera003
+    2300006: PaloMadera004
+    2300008: PaloMadera005
+    2300010: Pescado001
+    2300012: Pescado002
+    2300014: Pescado003
+    2300016: Pescado004
+    2300018: Pescado005
+    2300020: Pescado006
+    3300000: PaloMadera
+    3300002: PaloMadera001
+    3300004: PaloMadera003
+    3300006: PaloMadera004
+    3300008: PaloMadera005
+    3300010: Pescado001
+    3300012: Pescado002
+    3300014: Pescado003
+    3300016: Pescado004
+    3300018: Pescado005
+    3300020: Pescado006
+    4300000: Pescado005
+    4300002: Pescado003
+    4300004: Pescado004
+    4300006: Pescado001
+    4300008: Pescado002
+    4300010: PaloMadera004
+    4300012: PaloMadera001
+    4300014: PaloMadera005
+    4300016: PaloMadera
+    4300018: PaloMadera003
+    4300020: Pescado006
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -45,7 +45,7 @@ public class CelebracionEvent : MonoBehaviour {
 
 		botonTexto1.text = "Como si fuera Ragnarök";
 		botonTexto2.text = "Una hidromiel y a casa";
-		botonTexto3.text = "Nada, mañana hay que saquar";
+		botonTexto3.text = "Nada, mañana hay que saquear";
 	}
 
 	public void ragnarokClick()

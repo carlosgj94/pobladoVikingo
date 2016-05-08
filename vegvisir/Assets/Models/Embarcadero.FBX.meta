@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: c72ca9b0074ee1347a1da9586a7cc496
-timeCreated: 1462630422
+guid: 65c7bdfbf79d6b6418346a2cfd805bb5
+timeCreated: 1462634335
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -54,7 +54,7 @@ ModelImporter:
     4300016: ToconEmbarcadero001
   materials:
     importMaterials: 1
-    materialName: 0
+    materialName: 1
     materialSearch: 1
   animations:
     legacyGenerateAnimations: 4

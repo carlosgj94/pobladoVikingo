@@ -33,7 +33,7 @@ public class ParejasController : MonoBehaviour {
 	void Update () {
         if (vidas > 0)
         {
-            if (Time.timeSinceLevelLoad - momment > 0.7f)
+            if (Time.timeSinceLevelLoad - momment > 0.9f)
             {
                 momment = Time.timeSinceLevelLoad;
                 int random;

@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: ece109142ae34ec4cbb94f51608c9af3
-timeCreated: 1462630422
+guid: 6e23f157a453dff46a0109e1bafbfa48
+timeCreated: 1462636419
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -8,117 +8,137 @@ ModelImporter:
     100000: //RootNode
     100002: MarcoPuertaSalonComunal001
     100004: ParedCasa
-    100006: PuertaCasaComunal002
-    100008: PuertaCasaComunal003
-    100010: Tejado011
-    100012: Tejado012
-    100014: Tejado013
-    100016: Tejado014
-    100018: Tejado015
-    100020: Tejado016
-    100022: Tejado017
-    100024: Tejado018
-    100026: Tejado019
-    100028: Tejado020
-    100030: VigaDragonTejado002
-    100032: VigaDragonTejado003
-    100034: VigaTejado020
-    100036: VigaTejado021
-    100038: VigaTejado022
-    100040: VigaTejado023
-    100042: VigaTejado024
-    100044: VigaTejado025
-    100046: VigaTejado026
-    100048: VigaTejado027
-    100050: VigaTejado028
-    100052: VigaTejado029
-    100054: VigaTejado030
-    100056: VigaTejado031
+    100006: ParedCasa002
+    100008: ParedCasa003
+    100010: PuertaCasaComunal002
+    100012: PuertaCasaComunal003
+    100014: Tejado011
+    100016: Tejado012
+    100018: Tejado013
+    100020: Tejado014
+    100022: Tejado015
+    100024: Tejado016
+    100026: Tejado017
+    100028: Tejado018
+    100030: Tejado019
+    100032: Tejado020
+    100034: Tejado031
+    100036: Tejado032
+    100038: Tejado033
+    100040: VigaDragonTejado002
+    100042: VigaDragonTejado003
+    100044: VigaTejado020
+    100046: VigaTejado021
+    100048: VigaTejado022
+    100050: VigaTejado023
+    100052: VigaTejado024
+    100054: VigaTejado025
+    100056: VigaTejado026
+    100058: VigaTejado027
+    100060: VigaTejado028
+    100062: VigaTejado029
+    100064: VigaTejado030
+    100066: VigaTejado031
     400000: //RootNode
     400002: MarcoPuertaSalonComunal001
     400004: ParedCasa
-    400006: PuertaCasaComunal002
-    400008: PuertaCasaComunal003
-    400010: Tejado011
-    400012: Tejado012
-    400014: Tejado013
-    400016: Tejado014
-    400018: Tejado015
-    400020: Tejado016
-    400022: Tejado017
-    400024: Tejado018
-    400026: Tejado019
-    400028: Tejado020
-    400030: VigaDragonTejado002
-    400032: VigaDragonTejado003
-    400034: VigaTejado020
-    400036: VigaTejado021
-    400038: VigaTejado022
-    400040: VigaTejado023
-    400042: VigaTejado024
-    400044: VigaTejado025
-    400046: VigaTejado026
-    400048: VigaTejado027
-    400050: VigaTejado028
-    400052: VigaTejado029
-    400054: VigaTejado030
-    400056: VigaTejado031
+    400006: ParedCasa002
+    400008: ParedCasa003
+    400010: PuertaCasaComunal002
+    400012: PuertaCasaComunal003
+    400014: Tejado011
+    400016: Tejado012
+    400018: Tejado013
+    400020: Tejado014
+    400022: Tejado015
+    400024: Tejado016
+    400026: Tejado017
+    400028: Tejado018
+    400030: Tejado019
+    400032: Tejado020
+    400034: Tejado031
+    400036: Tejado032
+    400038: Tejado033
+    400040: VigaDragonTejado002
+    400042: VigaDragonTejado003
+    400044: VigaTejado020
+    400046: VigaTejado021
+    400048: VigaTejado022
+    400050: VigaTejado023
+    400052: VigaTejado024
+    400054: VigaTejado025
+    400056: VigaTejado026
+    400058: VigaTejado027
+    400060: VigaTejado028
+    400062: VigaTejado029
+    400064: VigaTejado030
+    400066: VigaTejado031
     2300000: MarcoPuertaSalonComunal001
     2300002: ParedCasa
-    2300004: PuertaCasaComunal002
-    2300006: PuertaCasaComunal003
-    2300008: Tejado011
-    2300010: Tejado012
-    2300012: Tejado013
-    2300014: Tejado014
-    2300016: Tejado015
-    2300018: Tejado016
-    2300020: Tejado017
-    2300022: Tejado018
-    2300024: Tejado019
-    2300026: Tejado020
-    2300028: VigaDragonTejado002
-    2300030: VigaDragonTejado003
-    2300032: VigaTejado020
-    2300034: VigaTejado021
-    2300036: VigaTejado022
-    2300038: VigaTejado023
-    2300040: VigaTejado024
-    2300042: VigaTejado025
-    2300044: VigaTejado026
-    2300046: VigaTejado027
-    2300048: VigaTejado028
-    2300050: VigaTejado029
-    2300052: VigaTejado030
-    2300054: VigaTejado031
+    2300004: ParedCasa002
+    2300006: ParedCasa003
+    2300008: PuertaCasaComunal002
+    2300010: PuertaCasaComunal003
+    2300012: Tejado011
+    2300014: Tejado012
+    2300016: Tejado013
+    2300018: Tejado014
+    2300020: Tejado015
+    2300022: Tejado016
+    2300024: Tejado017
+    2300026: Tejado018
+    2300028: Tejado019
+    2300030: Tejado020
+    2300032: Tejado031
+    2300034: Tejado032
+    2300036: Tejado033
+    2300038: VigaDragonTejado002
+    2300040: VigaDragonTejado003
+    2300042: VigaTejado020
+    2300044: VigaTejado021
+    2300046: VigaTejado022
+    2300048: VigaTejado023
+    2300050: VigaTejado024
+    2300052: VigaTejado025
+    2300054: VigaTejado026
+    2300056: VigaTejado027
+    2300058: VigaTejado028
+    2300060: VigaTejado029
+    2300062: VigaTejado030
+    2300064: VigaTejado031
     3300000: MarcoPuertaSalonComunal001
     3300002: ParedCasa
-    3300004: PuertaCasaComunal002
-    3300006: PuertaCasaComunal003
-    3300008: Tejado011
-    3300010: Tejado012
-    3300012: Tejado013
-    3300014: Tejado014
-    3300016: Tejado015
-    3300018: Tejado016
-    3300020: Tejado017
-    3300022: Tejado018
-    3300024: Tejado019
-    3300026: Tejado020
-    3300028: VigaDragonTejado002
-    3300030: VigaDragonTejado003
-    3300032: VigaTejado020
-    3300034: VigaTejado021
-    3300036: VigaTejado022
-    3300038: VigaTejado023
-    3300040: VigaTejado024
-    3300042: VigaTejado025
-    3300044: VigaTejado026
-    3300046: VigaTejado027
-    3300048: VigaTejado028
-    3300050: VigaTejado029
-    3300052: VigaTejado030
-    3300054: VigaTejado031
+    3300004: ParedCasa002
+    3300006: ParedCasa003
+    3300008: PuertaCasaComunal002
+    3300010: PuertaCasaComunal003
+    3300012: Tejado011
+    3300014: Tejado012
+    3300016: Tejado013
+    3300018: Tejado014
+    3300020: Tejado015
+    3300022: Tejado016
+    3300024: Tejado017
+    3300026: Tejado018
+    3300028: Tejado019
+    3300030: Tejado020
+    3300032: Tejado031
+    3300034: Tejado032
+    3300036: Tejado033
+    3300038: VigaDragonTejado002
+    3300040: VigaDragonTejado003
+    3300042: VigaTejado020
+    3300044: VigaTejado021
+    3300046: VigaTejado022
+    3300048: VigaTejado023
+    3300050: VigaTejado024
+    3300052: VigaTejado025
+    3300054: VigaTejado026
+    3300056: VigaTejado027
+    3300058: VigaTejado028
+    3300060: VigaTejado029
+    3300062: VigaTejado030
+    3300064: VigaTejado031
     4300000: VigaTejado031
     4300002: VigaTejado030
     4300004: Tejado015
@@ -147,9 +167,14 @@ ModelImporter:
     4300050: VigaTejado024
     4300052: VigaTejado022
     4300054: Tejado020
+    4300056: Tejado031
+    4300058: Tejado032
+    4300060: Tejado033
+    4300062: ParedCasa002
+    4300064: ParedCasa003
   materials:
     importMaterials: 1
-    materialName: 0
+    materialName: 1
     materialSearch: 1
   animations:
     legacyGenerateAnimations: 4
