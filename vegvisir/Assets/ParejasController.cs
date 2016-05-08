@@ -35,7 +35,7 @@ public class ParejasController : MonoBehaviour {
 	void Update () {
 		if (vidas > 0 && points < 50)
         {
-            if (Time.timeSinceLevelLoad - momment > 0.9f)
+            if (Time.timeSinceLevelLoad - momment > 0.6f)
             {
                 momment = Time.timeSinceLevelLoad;
                 int random;

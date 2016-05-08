@@ -30,7 +30,7 @@ public class Casa : MonoBehaviour {
     void Update()
     {
         if(ocupada)
-        if (Time.timeSinceLevelLoad - mommentStart > 2.2f )
+        if (Time.timeSinceLevelLoad - mommentStart > 1.7f )
         {
            if(parejas.vidas>0)
             parejas.restarVida();
