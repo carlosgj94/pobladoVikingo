@@ -270,8 +270,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 897747571}
   m_RootOrder: 1
-  m_AnchorMin: {x: 0.05022795, y: 0.32542413}
-  m_AnchorMax: {x: 0.94861245, y: 0.887}
+  m_AnchorMin: {x: 0.05022795, y: 0.23373301}
+  m_AnchorMax: {x: 0.9424528, y: 0.887}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -301,12 +301,12 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 2
-    m_MaxSize: 60
+    m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
-    m_VerticalOverflow: 1
+    m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 'Este es un texto de ejemplo. Este es un texto de ejemplo. Este es un texto
     de ejemplo. Este es un texto de ejemplo. '

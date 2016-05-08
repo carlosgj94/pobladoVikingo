@@ -1374,7 +1374,7 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1541998261}
   m_RootOrder: 1
-  m_AnchorMin: {x: 0.047455907, y: 0.4338197}
+  m_AnchorMin: {x: 0.047455907, y: 0.22200002}
   m_AnchorMax: {x: 0.9384301, y: 0.8785629}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
@@ -1405,7 +1405,7 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 2
-    m_MaxSize: 60
+    m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
