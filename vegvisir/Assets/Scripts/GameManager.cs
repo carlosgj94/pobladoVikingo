@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 	
@@ -33,18 +34,28 @@ public class GameManager : MonoBehaviour {
     }
     void lanzarEvento()
     {
-		int bigRandom = Random.Range (0,10);
+        if (variables.dias % 5 == 0)
+        {
+            SceneManager.LoadScene("Aldea");
+        }
+        else {
+            int bigRandom = Random.Range(0, 10);
 
-		if(bigRandom <= 4){
-			int random = Random.Range(0, listaEventos.Count);
-	        listaEventos[random].SetActive(true);
-		}else if(bigRandom <= 7){
-			int random = Random.Range(0, listaNoticias.Count);
-			listaNoticias[random].SetActive(true);
-		}else if(bigRandom <= 9){
+            if (bigRandom <= 5)
+            {
+                int random = Random.Range(0, listaEventos.Count);
+                listaEventos[random].SetActive(true);
+            }
+            else if (bigRandom <= 10)
+            {
+                int random = Random.Range(0, listaNoticias.Count);
+                listaNoticias[random].SetActive(true);
+            }
+        }
+        /*else if(bigRandom <= 9){
 			int random = Random.Range(0, listaJuegos.Count);
 			listaJuegos[random].SetActive(true);
-		}
+		}*/
 
     }
     void checkVidas()
