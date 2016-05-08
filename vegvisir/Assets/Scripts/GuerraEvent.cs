@@ -34,27 +34,27 @@ public class GuerraEvent : MonoBehaviour {
     [SerializeField]
     private ResultadoEvento resultado;
 
-    private List<string> enemigos = new List<string>{"John Snow", "El Cesar", "los Aliens", "una manada de topos"};
+    private List<string> enemigos = new List<string>{"la guardia negra", "El Cesar", "los Aliens", "una manada de topos"};
 	// Use this for initialization
 	void Start () {
         int random = Random.Range(0, enemigos.Count);
         titulo.text = "Guerra con " +enemigos[random];
-        contenido.text = "La guerra es algo mazo de duro lider. Que desea hacer premoh?";
+		contenido.text = "Nos atacan y nada bueno puede salir de esto. ¿Qué hacemos?";
 
-        botonTexto1.text = "Abandorar";
-        botonTexto2.text = "Pacto";
-        botonTexto3.text = "Guerra joder!";
+		botonTexto1.text = "Huir";
+		botonTexto2.text = "Pactar una tregua";
+		botonTexto3.text = "¡A las armas!";
 
     }
     void OnEnable()
     {
         int random = Random.Range(0, enemigos.Count);
         titulo.text = "Guerra con " + enemigos[random];
-        contenido.text = "La guerra es algo mazo de duro lider. Que desea hacer premoh?";
+		contenido.text = "Nos atacan y nada bueno puede salir de esto. ¿Qué hacemos?";
 
-        botonTexto1.text = "Abandonar";
-        botonTexto2.text = "Pacto";
-        botonTexto3.text = "Guerra joder!";
+        botonTexto1.text = "Huir";
+        botonTexto2.text = "Pactar una tregua";
+        botonTexto3.text = "¡A las armas!";
     }
     public void abandonarClick()
     {
