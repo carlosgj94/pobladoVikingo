@@ -57,7 +57,7 @@ public class ParejasController : MonoBehaviour {
 			}
 			popup.gameObject.SetActive (true);
 			contenidoPopup.text = "Has logrado: " + points + ".\nQue son: " + points * 5 + " personas nuevas.\nVaya semental!";
-			PlayerPrefs.SetInt ("Poblacion", PlayerPrefs.GetInt ("Poblacion") + points * 5);
+			PlayerPrefs.SetInt ("Poblacion", PlayerPrefs.GetInt ("Poblacion") + (points * 5));
         }
 	}
     public void houseChecked(int number)
