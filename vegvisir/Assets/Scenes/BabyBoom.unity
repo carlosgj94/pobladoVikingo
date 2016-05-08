@@ -906,7 +906,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &887275802
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1111,11 +1111,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22458190, guid: 24620a39731b9bd449a6d13a0fcded74, type: 2}
       propertyPath: m_AnchorMin.y
-      value: 0.164
+      value: 0.11136842
       objectReference: {fileID: 0}
     - target: {fileID: 22458190, guid: 24620a39731b9bd449a6d13a0fcded74, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0.64743316
+      value: 0.69447005
       objectReference: {fileID: 0}
     - target: {fileID: 22458190, guid: 24620a39731b9bd449a6d13a0fcded74, type: 2}
       propertyPath: m_AnchorMax.y
@@ -1191,6 +1191,18 @@ Prefab:
     - target: {fileID: 11475296, guid: 24620a39731b9bd449a6d13a0fcded74, type: 2}
       propertyPath: m_FontData.m_BestFit
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11449500, guid: 24620a39731b9bd449a6d13a0fcded74, type: 2}
+      propertyPath: m_FontData.m_MaxSize
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 11468164, guid: 24620a39731b9bd449a6d13a0fcded74, type: 2}
+      propertyPath: m_FontData.m_MaxSize
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 11475296, guid: 24620a39731b9bd449a6d13a0fcded74, type: 2}
+      propertyPath: m_FontData.m_MaxSize
+      value: 60
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 24620a39731b9bd449a6d13a0fcded74, type: 2}
@@ -1695,7 +1707,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1399583196
 RectTransform:
   m_ObjectHideFlags: 0
