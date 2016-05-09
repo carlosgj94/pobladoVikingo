@@ -26,6 +26,8 @@ public class ParejasController : MonoBehaviour {
 	private Text titulo;
     [SerializeField]
     private Text contenidoPopup;
+
+    private bool muertoDelTodo = false;
 	// Use this for initialization
 	void Start () {
         momment = -0.5f;
@@ -49,15 +51,22 @@ public class ParejasController : MonoBehaviour {
         }
         else
         {
-			//Aqui se va a liar una gorda!
-			if (vidas <= 0) {
-				titulo.text = "Has perdido";
-			} else {
-				titulo.text = "Has ganado";
-			}
-			popup.gameObject.SetActive (true);
-			contenidoPopup.text = "Has logrado: " + points + ".\nQue son: " + points * 5 + " personas nuevas.\nVaya semental!";
-			PlayerPrefs.SetInt ("Poblacion", PlayerPrefs.GetInt ("Poblacion") + (points * 5));
+            if (!muertoDelTodo)
+            {
+                muertoDelTodo = true;
+                //Aqui se va a liar una gorda!
+                if (vidas <= 0)
+                {
+                    titulo.text = "Has perdido";
+                }
+                else {
+                    titulo.text = "Has ganado";
+                }
+                popup.gameObject.SetActive(true);
+                contenidoPopup.text = "Has logrado: " + points + ".\nQue son: " + points * 5 + " personas nuevas.\nVaya semental!";
+                PlayerPrefs.SetInt("Poblacion", PlayerPrefs.GetInt("Poblacion") + (points * 5));
+                Debug.Log(PlayerPrefs.GetInt("Poblacion"));
+            }
         }
 	}
     public void houseChecked(int number)

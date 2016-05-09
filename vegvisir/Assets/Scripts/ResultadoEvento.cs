@@ -23,6 +23,7 @@ public class ResultadoEvento : MonoBehaviour {
     }
     public void irEscena1()
     {
+        Debug.Log(PlayerPrefs.GetInt("Poblacion"));
         SceneManager.LoadScene("Scene1");
     }
 }
